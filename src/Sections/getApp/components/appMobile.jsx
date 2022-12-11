@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import { useParallax, Parallax } from 'react-scroll-parallax';
+import { useParallax, Parallax } from "react-scroll-parallax";
 
 const AppMobile = () => {
   const vidRef = useRef();
@@ -17,16 +17,20 @@ const AppMobile = () => {
           </video>
         </div>
         <div className="absolute md:block hidden right-[-50px] bottom-[80px]">
-          <img
-            src="./items/app/X.png"
-            alt=" "
-            className="ml-[60px] mb-[50px] max-w-[70px]"
-          />
-          <img
-            src="./items/app/app_circle.png"
-            alt=" "
-            className="max-w-[120px]"
-          />
+          <Parallax rotateX={[0, 180]}>
+            <img
+              src="./items/app/X.png"
+              alt=" "
+              className="ml-[60px] mb-[50px] max-w-[70px]"
+            />
+          </Parallax>
+          <Parallax rotateX={[0, 180]}>
+            <img
+              src="./items/app/app_circle.png"
+              alt=" "
+              className="max-w-[120px]"
+            />
+          </Parallax>
         </div>
       </div>
     </div>
