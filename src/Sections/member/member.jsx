@@ -17,7 +17,7 @@ const Member = () => {
         </div>
       </div>
       <div className="absolute hidden md:block xl:right-20 md:right-5 xl:bottom-32 md:bottom-20">
-        <Parallax rotateY={[0, 180]}>
+        <Parallax rotateY={[0, 360]}>
           <img src="./items/member/small_fan.png" alt="" width="80px" />
         </Parallax>
       </div>
