@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import { useParallax, Parallax } from 'react-scroll-parallax';
+import { useParallax, Parallax } from "react-scroll-parallax";
 
 const TrainMobile = () => {
   const vidRef = useRef();
@@ -21,9 +21,27 @@ const TrainMobile = () => {
           <source src="./items/app/app.mp4" type="video/mp4" />
         </video>
       </div>
-      <img src="./items/train/globe.png" alt=" " className="absolute left-[50%] top-[20px]" />
-      <img src="./items/train/stick.png" alt=" " className="-ml-[15%] absolute lg:right-[150px] right-[50px] bottom-[100px] w-[80px] lg:w-[110px]" />
-      <img src="./items/train/globe.png" alt=" " className="absolute lg:right-[150px] right-[50px] lg:bottom-[200px] bottom-[200px]" />
+      <div className="absolute left-[50%] top-[20px]">
+        <Parallax rotateZ={[-180, 360]}>
+          <img src="./items/train/globe.png" alt=" " className="" />
+        </Parallax>
+      </div>
+      <div className="absolute lg:right-[150px] right-[50px] bottom-[100px] ">
+      <Parallax rotateZ={[0, 360]}>
+        <img
+          src="./items/train/stick.png"
+          alt=" "
+          className="-ml-[15%] w-[80px] lg:w-[110px]"
+        />
+      </Parallax>
+      </div>
+      <Parallax rotateZ={[0, 360]}>
+        <img
+          src="./items/train/globe.png"
+          alt=" "
+          className="absolute lg:right-[150px] right-[50px] lg:bottom-[200px] bottom-[200px]"
+        />
+      </Parallax>
     </div>
   );
 };
