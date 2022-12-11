@@ -1,0 +1,30 @@
+.logo-svg {
+  position: fixed;
+  top: 40px;
+  left: 35px;
+  z-index: 100;
+}
+
+.landingPage-container {
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.App {
+  font-family: "Menlo", sans-serif;
+}
+
+.subtitle {
+  font-family: "Druk Wide medium", sans-serif;
+}
+
+.goes {
+  font-family: "Helvetica Neue, Medium";
+}
+
+@media only screen and (max-width: 767px) {
+  .logo-svg {
+    top: 20px;
+    left: 20px;
+  }
+}

@@ -1,0 +1,50 @@
+.sign-btn{
+    border-radius: 10px;
+    padding: 10px 40px;
+    gap:25px;
+    border: solid 1px;
+    
+}
+.btn-container{
+    font-size:18px;
+    position: relative;
+}
+.btn-container svg{
+    width: 30px;
+    height: 30px;
+}
+.btn-container img{
+    width: 30px;
+    height: 30px;
+}
+.backGrey{
+    position: absolute;
+    left: 0;
+    top:0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.5;
+}
+.ico-text {
+    margin-right: 20px;
+}
+
+.icon-item {
+    margin: 0 8px;
+}
+@media only screen and (max-width: 767px) {
+    .btn-container{
+        font-size:11px;
+    }
+    .sign-btn{
+        margin-bottom: 10px !important;
+    }
+    .btn-container svg{
+        width: 20px;
+        height: 20px;
+    }
+    .btn-container img{
+        width: 20px;
+        height: 20px;
+    }
+}

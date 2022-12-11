@@ -1,0 +1,18 @@
+@media only screen and (min-width: 1500px) {
+  .title {
+    font-size: 45px;
+  }
+}
+
+@media only screen and (min-width: 1700px) {
+  .title {
+    font-size: 55px;
+  }
+}
+
+.lock_input {
+  border-width: 1px;
+  border-color: aquamarine !important;
+  border-radius: 10px;
+  padding: 4px 100px;
+}

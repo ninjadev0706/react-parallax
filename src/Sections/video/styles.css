@@ -1,0 +1,29 @@
+.app-wrap {
+  border: 1px solid;
+  border-radius: 10px;
+  gap: 15px;
+  padding: 5px 50px;
+  width: fit-content;
+  display: flex;
+}
+
+.app-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+.lock_input {
+  border-width: 1px;
+  border-color: aquamarine !important;
+  border-radius: 10px;
+  padding: 4px 100px;
+}
+
+@media only screen and (max-width: 768px) {
+  .app-wrap {
+    width: 100%;
+    justify-content: center;
+  }
+}
