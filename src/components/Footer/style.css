@@ -1,16 +1,17 @@
-.footer {
+.contact {
   font-size: 12px;
   font-family: 'Menlo', sans-serif;
   font-weight: bold;
-  margin-bottom: 100px;
 }
 .mobfooter{
   display: none;
   font-size: 10px;
 }
+
 a{
   text-decoration: none !important;
 }
+
 @media only screen and (max-width: 767px) {
   .footer {
   display: none;
