@@ -1,5 +1,5 @@
 import React from "react";
-import { useParallax, Parallax } from 'react-scroll-parallax';
+import { useParallax, Parallax } from "react-scroll-parallax";
 import HeroText from "./components/heroText";
 import HeroVideo from "./components/heroVideo";
 
@@ -17,15 +17,18 @@ const Hero = () => {
         />
       </div>
       <div className="md:flex items-center md:gap-[50px]">
-          <HeroText />
-          <HeroVideo />
+        <HeroText />
+        <HeroVideo />
       </div>
       <div className="mt-10 ml-[40%] md:mb-[200px] mb-[50px]">
-      <Parallax rotateY={[-90, 360]}>
-        {/* <div ref={parallax.ref} className="spinner"> */}
-          <img className="w-[120px] md:w-[150px] lg:w-[200px]" name="big_fan" src="./items/hero/big_fan.png" alt=" " />
-        {/* </div> */}
-      </Parallax>
+        <Parallax rotateY={[-90, 360]}>
+          <img
+            className="w-[80px] md:w-[120px] lg:w-[150px]"
+            name="big_fan"
+            src="./items/hero/big_fan.png"
+            alt=" "
+          />
+        </Parallax>
       </div>
     </div>
   );
