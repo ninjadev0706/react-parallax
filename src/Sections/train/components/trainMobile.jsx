@@ -21,7 +21,7 @@ const TrainMobile = () => {
           <source src="./items/app/app.mp4" type="video/mp4" />
         </video>
       </div>
-      <div className="absolute left-[50%] top-[20px]">
+      <div className="absolute left-[50%] top-[30px]">
         <Parallax rotateZ={[-180, 360]}>
           <img src="./items/train/globe.png" alt=" " className="" />
         </Parallax>

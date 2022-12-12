@@ -7,7 +7,7 @@ import "./styles.css";
 
 const Hero = () => {
   return (
-    <div className="w-[100%] md:px-[100px] lg:px-[150px] xl:px-[200px] px-[20px] pt-10 mb-20 gap-[20px]">
+    <div className="w-[100%] md:px-[100px] lg:px-[150px] xl:px-[200px] px-[20px] pt-10 mb-20 gap-[30px]">
       <img src="./items/logo.png" alt=" " className="mb-[10px] md:mb-20" />
       <div className="flex justify-center">
         <img
