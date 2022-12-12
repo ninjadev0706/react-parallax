@@ -1,17 +1,12 @@
-.app-wrap {
-  border: 1px solid;
-  border-radius: 10px;
-  gap: 15px;
-  padding: 5px;
-  width: fit-content;
-  display: flex;
-}
-
 .app-content {
   display: flex;
   justify-content: center;
   flex-direction: column;
   font-weight: bold;
+}
+
+.bignumber {
+  font-size: 200px;
 }
 
 .smallnumber {

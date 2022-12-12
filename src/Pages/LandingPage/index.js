@@ -11,13 +11,11 @@ import Lock from "../../Sections/lock/lock";
 import Video from "../../Sections/video/video";
 import Footer from "../../Sections/footer/footer";
 import Stream from "../../Sections/stream/stream";
-import Landing from "../../Sections/LandingSection/index";
 import "./style.css";
 
 const LandingPage = () => {
   return (
-    <div className="App overflow-x-hidden">
-      {/* <Landing /> */}
+    <div className="App overflow-x-hidden px-[35px]">
       <Hero />
       <Member />
       <Train />

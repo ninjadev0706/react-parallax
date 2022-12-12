@@ -2,6 +2,7 @@ import React from 'react'
 
 import ArtComponent from './components/artComponent'
 import ArtVideo from './components/artVideo'
+import './styles.css'
 
 const Art = () => {
     return (

@@ -6,7 +6,7 @@ const Tech = () => {
   return (
     <div className="hidden md:block lg:px-[15%] xl:px-[20%] px-[10%]">
       <div className="mt-[80px] mb-[150px] block text-center leading-[70px]">
-        <p className="max-w-[700px] w-[90%] 2xl:text-[55px] md:text-[40px] text-[30px] font-drukBold m-auto leading-[1]">
+        <p className="max-w-[700px] w-[90%] 2xl:text-[65px] md:text-[40px] text-[30px] font-drukBold m-auto leading-[1]">
           You are the hero, not the big tech.
         </p>
         <div className="h-[20px]"></div>
@@ -15,7 +15,7 @@ const Tech = () => {
           take zero commission, your earning are yours, fully.
         </p>
       </div>
-      <Parallax rotateZ={[30, 120]}>
+      <Parallax translateY={[50, 0]}>
         <img
           src="./items/tech/small_pip.png"
           alt=" "

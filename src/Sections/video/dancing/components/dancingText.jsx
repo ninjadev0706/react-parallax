@@ -22,13 +22,13 @@ const DancingText = () => {
             </p>
           </div>
         </div>
-        <div className="absolute right-[-100px] bottom-[-500px] md:top-[-100px]">
-          <Parallax rotateZ={[-60, 0]}>
-            <img src="./items/video/dancing/flow.png" alt=" " className="" />
+        <div className="absolute right-[-50px] md:right-[-100px] bottom-[-500px] md:top-[-100px]">
+          <Parallax translateY={[50, 0]}>
+            <img src="./items/video/dancing/flow.png" alt=" " className="w-[150px] md:w-[200px]" />
           </Parallax>
         </div>
       </div>
-      <p className="font-drukBold leading-[1.3] 2xl:text-[55px] md:text-[40px] text-[30px] font-black mb-[30px] 2xl:mb-[20px] mt-[30px] md:mt-0">
+      <p className="font-drukBold mb-[50px] mr-[-24px] leading-[1.3] 2xl:text-[65px] md:text-[40px] text-[30px] font-black 2xl:mb-[20px] mt-[30px] md:mt-0">
         Crypto is here to stay.
       </p>
       <p className="md:block hidden text-[17px]">
