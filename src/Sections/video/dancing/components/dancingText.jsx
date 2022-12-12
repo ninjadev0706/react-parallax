@@ -27,7 +27,7 @@ const DancingText = () => {
         </Parallax>
         </div>
       </div>
-      <p className="font-drukBold leading-[1.3] md:text-[35px] text-[30px] font-black mb-[30px] 2xl:mb-[20px] mt-[30px] md:mt-0">
+      <p className="font-drukBold leading-[1.3] md:text-[35px] text-[30px] font-black mb-[30px] 2xl:mb-[20px] mt-[30px] md:mt-0 px-[20px]">
         Crypto is here to stay.
       </p>
       <p className="md:block hidden text-[17px]">

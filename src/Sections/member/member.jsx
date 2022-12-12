@@ -12,7 +12,7 @@ const Member = () => {
         <div className="md:order-last">
           <MemberText />
         </div>
-        <div className="">
+        <div>
           <MemberMark />
         </div>
       </div>

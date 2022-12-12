@@ -13,15 +13,15 @@ const Hero = () => {
         <img
           src="./items/hero/hero.png"
           alt=" "
-          className="block md:hidden w-[100%]"
+          className="block md:hidden w-[250px]"
         />
       </div>
-      <div className="flex items-center">
-        <HeroText />
-        <HeroVideo />
+      <div className="md:flex items-center md:gap-[50px]">
+          <HeroText />
+          <HeroVideo />
       </div>
       <div className="mt-10 ml-[40%] md:mb-[200px] mb-[50px]">
-      <Parallax rotateY={[0, 360]}>
+      <Parallax rotateY={[-90, 360]}>
         {/* <div ref={parallax.ref} className="spinner"> */}
           <img className="w-[120px] md:w-[150px] lg:w-[200px]" name="big_fan" src="./items/hero/big_fan.png" alt=" " />
         {/* </div> */}
