@@ -7,11 +7,10 @@ const Mobile = () => {
     vidRef.current.play();
   }, []);
   return (
-    <div className="flex justify-center w-[90%] md:hidden md:w-6/12">
+    <div className="flex justify-center px-[10%] md:hidden md:w-6/12">
       <div className="relative items-center">
         <div className="md:video-container w-[300px] rounded-[20px] overflow-hidden">
           <video playsInline autoPlay muted loop ref={vidRef}>
-            <source src="./items/app/app.mp4" type="video/mp4" />
             <source src="./items/app/app.mp4" type="video/mp4" />
           </video>
         </div>

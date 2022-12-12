@@ -12,9 +12,9 @@ const Video = () => {
         <Dancing />
         <Art />
       </div>
-      <div className="pb-[40px] px-[20px]">
+      <div className="pb-[40px] px-[10%]">
         <div className="mb-[40px]">
-          <p className="font-drukBold text-center m-auto leading-[1.3] md:text-[35px] text-[30px] font-black md:max-w-[700px]">
+          <p className="font-drukBold text-center m-auto leading-[1.3] 2xl:text-[55px] md:text-[40px] text-[30px] font-black md:max-w-[700px]">
             Built for creators by Creators.
           </p>
         </div>

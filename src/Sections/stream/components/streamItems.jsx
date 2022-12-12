@@ -26,10 +26,6 @@ const StreamItems = () => {
             src="./items/stream/stream.mp4"
             type="video/mp4"
           />
-          <source
-            src="./items/stream/stream.mp4"
-            type="video/mp4"
-          />
         </video>
       </div>
       <img

@@ -6,7 +6,7 @@ import CommunicateList from "./components/communicateList";
 const Communicate = () => {
   return (
     <div className="relative md:mb-[200px] mb-[50px] md:mt-[400px] mt-[50px]">
-      <div className="max-w-[1000px] w-[90%] m-auto justify-center items-center md:flex hidden gap-[100px]">
+      <div className="max-w-[1000px] px-[10%] m-auto justify-center items-center md:flex hidden gap-[100px]">
         <CommunicateMobile />
         <CommunicateList />
       </div>

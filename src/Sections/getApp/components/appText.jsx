@@ -5,9 +5,9 @@ const AppText = () => {
   return (
     <div className="md:w-7/12">
       <div className="leading-[60px] mb-[40px]">
-        <p className="font-drukBold leading-[1] text-[45px]">No Ads.</p>
-        <p className="font-drukBold leading-[1] text-[45px]">No Rugs.</p>
-        <p className="hidden md:block font-drukBold leading-[1] text-[45px]">You in control.</p>
+        <p className="font-drukBold leading-[1] 2xl:text-[55px] text-[40px]">No Ads.</p>
+        <p className="font-drukBold leading-[1] 2xl:text-[55px] text-[40px]">No Rugs.</p>
+        <p className="hidden md:block font-drukBold leading-[1] 2xl:text-[55px] text-[40px]">You in control.</p>
         <div className="flex items-end mt-[40px] relative">
           <p className="bignumber font-drukBold text-[#0000ff]">80</p>
           <p className="creator_pro mb-[-30px] font-bold text-[#0000ff]">%</p>

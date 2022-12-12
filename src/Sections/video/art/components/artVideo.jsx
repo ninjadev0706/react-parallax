@@ -11,7 +11,6 @@ const ArtVideo = () => {
       <div className="md:video-container w-[300px] m-auto rounded-[20px] overflow-hidden">
         <video playsInline autoPlay muted loop ref={vidRef}>
           <source src="./items/video/art/art.mp4" type="video/mp4" />
-          <source src="./items/video/art/art.mp4" type="video/mp4" />
         </video>
       </div>
       <p className="text-[17px] pt-[40px] w-[300px] m-auto text-center">

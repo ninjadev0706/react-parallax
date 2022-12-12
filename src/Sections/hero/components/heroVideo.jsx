@@ -20,10 +20,6 @@ const HeroVideo = () => {
             src="./items/hero/video/hero.mp4"
             type="video/mp4"
           />
-          <source
-            src="./items/hero/video/hero.mp4"
-            type="video/mp4"
-          />
         </video>
       </div>
     </div>
