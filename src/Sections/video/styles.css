@@ -1,17 +1,6 @@
-.app-wrap {
-  border: 1px solid;
-  border-radius: 10px;
-  gap: 15px;
-  padding: 5px 50px;
-  width: fit-content;
-  display: flex;
-}
-
-.app-content {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  font-weight: bold;
+.video-wrap {
+  width: 274px;
+  height: 390px;
 }
 
 .lock_input {

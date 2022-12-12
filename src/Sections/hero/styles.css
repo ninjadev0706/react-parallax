@@ -1,11 +1,10 @@
-.app-wrap {
+/* .app-wrap {
   border: 1px solid;
   border-radius: 10px;
   gap: 15px;
-  padding: 5px 50px;
   width: fit-content;
   display: flex;
-}
+} */
 
 .app-content {
   display: flex;
@@ -14,15 +13,15 @@
   font-weight: bold;
 }
 
-.hero-video {
+/* .hero-video {
   width: 100%;
-}
+} */
 
 .hero-wrap {
 
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .app-wrap {
     width: 100%;
   }
@@ -37,16 +36,4 @@
     flex-direction: column-reverse;
     width: 100%;
   }  
-}
-
-@media only screen and (min-width: 1500px) {
-  .title {
-    font-size: 45px;
-  }
-}
-
-@media only screen and (min-width: 1700px) {
-  .title {
-    font-size: 55px;
-  }
 }

@@ -7,23 +7,23 @@ import "./styles.css";
 
 const Hero = () => {
   return (
-    <div className="w-[100%] pt-[30px] md:px-[100px] lg:px-[150px] xl:px-[150px] px-[20px] md:pt-[60px] mb-20 gap-[30px]">
+    <div className="w-[100%] pt-[30px] md:px-[140px] px-[20px] md:pt-[60px] mb-20 gap-[30px]">
       <img src="./items/logo.png" alt=" " className="mb-[10px] md:mb-20" />
-      {/* <div className="flex justify-center">
-        <img
+      {/* <div className="flex justify-center"> */}
+        {/* <img
           src="./items/hero/hero.png"
           alt=" "
           className="block md:hidden w-[100%]"
-        />
-      </div> */}
-      <div className="hero-wrap md:flex items-center md:gap-[50px]">
+        /> */}
+      {/* </div> */}
+      <div className="hero-wrap md:flex items-center">
         <HeroText />
         <HeroVideo />
       </div>
-      <div className="mt-[50px]  ml-[40%] md:mb-[100px] mb-[50px]">
+      <div className="md:mt-[100px] mt-[50px] ml-[40%] md:mb-[150px] mb-[50px]">
         <Parallax translateX={[-20, 20]}>
           <img
-            className="w-[80px] md:w-[120px] lg:w-[150px]"
+            className="w-[174px] h-[167px]"
             name="big_fan"
             src="./items/hero/big_fan.png"
             alt=" "
