@@ -17,7 +17,7 @@ const TrainText = () => {
         </div>
       </div>
       <div className="absolute ml-[250px]">
-        <Parallax rotateZ={[0, 360]}>
+        <Parallax rotateX={[-60, 60]}>
           <img
             src="./items/train/purple.png"
             alt=""
@@ -26,7 +26,7 @@ const TrainText = () => {
         </Parallax>
       </div>
       <div className=" lg:mt-[300px] mt-[250px] absolute">
-      <Parallax rotateY={[0, 360]}>
+      <Parallax rotateY={[0, 180]}>
         <img
           src="./items/train/pipe.png"
           alt=""

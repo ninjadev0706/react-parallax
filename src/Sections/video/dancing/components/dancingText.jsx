@@ -18,7 +18,7 @@ const DancingText = () => {
           />
         </div>
         <div className="absolute right-[-100px] bottom-[-500px] md:top-[-100px]">
-        <Parallax rotateY={[0, 360]}>
+        <Parallax rotateY={[0, 180]}>
           <img
             src="./items/video/dancing/flow.png"
             alt=" "

@@ -22,26 +22,24 @@ const TrainMobile = () => {
         </video>
       </div>
       <div className="absolute left-[50%] top-[30px]">
-        <Parallax rotateZ={[-180, 360]}>
+        <Parallax rotateZ={[0, 180]}>
           <img src="./items/train/globe.png" alt=" " className="" />
         </Parallax>
       </div>
       <div className="absolute lg:right-[150px] right-[50px] bottom-[100px] ">
-      <Parallax rotateZ={[0, 360]}>
-        <img
-          src="./items/train/stick.png"
-          alt=" "
-          className="-ml-[15%] w-[80px] lg:w-[110px]"
-        />
-      </Parallax>
+        <Parallax rotateZ={[0, 180]}>
+          <img
+            src="./items/train/stick.png"
+            alt=" "
+            className="-ml-[15%] w-[80px] lg:w-[110px]"
+          />
+        </Parallax>
       </div>
-      <Parallax rotateZ={[0, 360]}>
-        <img
-          src="./items/train/globe.png"
-          alt=" "
-          className="absolute lg:right-[150px] right-[50px] lg:bottom-[200px] bottom-[200px]"
-        />
-      </Parallax>
+      <div className="absolute lg:right-[150px] right-[50px] lg:bottom-[200px] bottom-[200px]">
+        <Parallax rotateZ={[0, 180]}>
+          <img src="./items/train/globe.png" alt=" " className="" />
+        </Parallax>
+      </div>
     </div>
   );
 };

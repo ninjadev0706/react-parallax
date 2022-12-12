@@ -12,7 +12,7 @@ const Communicate = () => {
       </div>
       <div className="absolute bottom-[600px] lg:bottom-[-50px] xl:bottom-[-100px] 2xl:bottom-[-100px] md:bottom-[0px] right-[-300px] md:right-[-100px] lg:right-[-200px] xl:right-[-200px] 2xl:right-[-280px]">
         <div className="w-[500px] md:w-[400px] lg:w-[600px] xl:w-[700px] 2xl:w-[1000px]">
-          <Parallax rotateX={[-180, 360]}>
+          <Parallax rotateX={[-90, 90]}>
             <img src="./items/communicate/pip.png" alt="" className="" />
           </Parallax>
         </div>

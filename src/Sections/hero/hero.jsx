@@ -21,7 +21,7 @@ const Hero = () => {
         <HeroVideo />
       </div>
       <div className="mt-10 ml-[40%] md:mb-[200px] mb-[50px]">
-        <Parallax rotateY={[-90, 360]}>
+        <Parallax rotateX={[-90, 90]}>
           <img
             className="w-[80px] md:w-[120px] lg:w-[150px]"
             name="big_fan"

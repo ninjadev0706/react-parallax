@@ -17,14 +17,14 @@ const AppMobile = () => {
           </video>
         </div>
         <div className="absolute md:block hidden right-[-50px] bottom-[80px]">
-          <Parallax rotateZ={[0, 360]}>
+          <Parallax rotateZ={[-20, 20]}>
             <img
               src="./items/app/X.png"
               alt=" "
               className="ml-[60px] mb-[50px] max-w-[70px]"
             />
           </Parallax>
-          <Parallax rotateZ={[0, 360]}>
+          <Parallax rotateZ={[-20, 20]}>
             <img
               src="./items/app/app_circle.png"
               alt=" "

@@ -15,7 +15,7 @@ const Tech = () => {
           take zero commission, your earning are yours, fully.
         </p>
       </div>
-      <Parallax rotateZ={[0, 360]}>
+      <Parallax rotateX={[0, 180]}>
         <img
           src="./items/tech/small_pip.png"
           alt=" "
