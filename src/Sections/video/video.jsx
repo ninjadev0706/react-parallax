@@ -3,6 +3,7 @@ import { useParallax, Parallax } from 'react-scroll-parallax';
 import Rock from "./rock/rock";
 import Dancing from "./dancing/dancing";
 import Art from "./art/art";
+import './styles.css';
 
 const Video = () => {
   return (

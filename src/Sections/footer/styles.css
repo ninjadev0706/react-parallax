@@ -1,7 +1,19 @@
 .footer {
-  font-family: "Druk Wide medium", sans-serif;
+  font-family: "druk_wide_bold", sans-serif;
   font-size: 15px;
   font-weight: 700;
+}
+
+.social {
+  font-family: "druk_wide_bold";
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.contact {
+  font-size: 16px;
+  font-family: 'Menlo', sans-serif;
+  font-weight: bold;
 }
 
 @media only screen and (min-width: 768px) {
@@ -14,5 +26,13 @@
   .footerwrap {
     display: flex;
     flex-direction: column-reverse !important;
+  }
+
+  .social {
+    font-family: "druk_medium";
+  }
+
+  .contact {
+    font-size: 12px;
   }
 }

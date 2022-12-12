@@ -11,7 +11,6 @@ import Lock from "../../Sections/lock/lock";
 import Video from "../../Sections/video/video";
 import Footer from "../../Sections/footer/footer";
 import Stream from "../../Sections/stream/stream";
-import Landing from "../../Sections/LandingSection/index";
 import "./style.css";
 
 const LandingPage = () => {

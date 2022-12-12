@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="119.577" height="45.028" viewBox="0 0 119.577 45.028">
+  <g id="Group_1431" data-name="Group 1431" transform="translate(-55 -68.972)">
+    <g id="Group_574" data-name="Group 574" transform="translate(-773.588 -351.525)">
+      <path id="Path_667" data-name="Path 667" d="M0,.443H46.7A17.655,17.655,0,0,1,51.142.9a8.056,8.056,0,0,1,2.736,1.209,4.117,4.117,0,0,1,1.4,1.7,5,5,0,0,1,.4,1.941v.19a3.9,3.9,0,0,1-.4,1.8,4.582,4.582,0,0,1-1.065,1.369,6.02,6.02,0,0,1-1.511.969,8.494,8.494,0,0,1-1.735.574,11.818,11.818,0,0,1,2.243.6A6.6,6.6,0,0,1,55.167,12.4a5.463,5.463,0,0,1,1.383,1.83,6.186,6.186,0,0,1,.526,2.688v.254a6.8,6.8,0,0,1-.526,2.657,5.53,5.53,0,0,1-1.734,2.211,9.081,9.081,0,0,1-3.2,1.511,18.508,18.508,0,0,1-4.915.556H0Z" transform="translate(829 420.755)"/>
+      <rect id="Rectangle_184" data-name="Rectangle 184" width="12.056" height="23.669" transform="translate(890.371 421.199)"/>
+      <rect id="Rectangle_185" data-name="Rectangle 185" width="12.056" height="23.669" transform="translate(905.98 421.199)"/>
+      <path id="Path_668" data-name="Path 668" d="M60.01,2.959V22.111a2.955,2.955,0,0,0,4.318,2.622l18.419-9.577a2.954,2.954,0,0,0,0-5.242L64.328.337A2.955,2.955,0,0,0,60.01,2.959" transform="translate(863.827 420.498)"/>
+    </g>
+    <text id="beta" transform="translate(55 111)" font-size="14" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500"><tspan x="0" y="0">beta</tspan></text>
+  </g>
+</svg>

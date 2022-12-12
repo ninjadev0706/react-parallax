@@ -1,17 +1,19 @@
-import React from 'react'
+import React from "react";
 
-import List from './components/list'
-import Contact from './components/contact'
+import List from "./components/list";
+import Contact from "./components/contact";
 
-import './styles.css'
+import "./styles.css";
 
 const Footer = () => {
-    return (
-        <div className='title pt-[120px] xl:px-[300px] lg:px-[200px] md:px-[100px] px-[50px] pb-[50px] bg-[#f5f5f5]'>
-            <List />
-            <Contact />
-        </div>
-    )
-}
+  return (
+    <div className="bg-[#f5f5f5]">
+      <div className="title pt-[100px] pb-[50px] md:py-[170px] max-w-[1200px] w-[80%] m-auto">
+        <List />
+        <Contact />
+      </div>
+    </div>
+  );
+};
 
-export default Footer
+export default Footer;
