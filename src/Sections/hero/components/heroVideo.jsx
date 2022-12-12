@@ -7,8 +7,8 @@ const HeroVideo = () => {
     vidRef.current.play();
   }, []);
   return (
-    <div className="md:w-7/12 md:block hidden">
-      <div className="video-container rounded-[20px] overflow-hidden">
+    <div className="md:w-7/12">
+      <div className="hero-video rounded-[20px] overflow-hidden">
         <video
           playsInline
           autoPlay
