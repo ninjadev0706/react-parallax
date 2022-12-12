@@ -5,7 +5,7 @@ import TrainMobile from './components/trainMobile'
 
 const Train = () => {
     return (
-        <div className='items-center md:flex hidden relative gap-[100px] m-auto max-w-[900px]'>
+        <div className='items-center md:flex hidden relative max-w-[1600px] w-[90%] m-auto'>
             <TrainText />
             <TrainMobile />
             {/* <img src='./items/train/train.png' alt=' ' className='-ml-[15%]' />
