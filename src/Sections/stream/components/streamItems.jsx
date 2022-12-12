@@ -26,10 +26,6 @@ const StreamItems = () => {
             src="./items/stream/stream.mp4"
             type="video/mp4"
           />
-          <source
-            src="./items/stream/stream.mp4"
-            type="video/mp4"
-          />
         </video>
       </div>
       <img
@@ -37,11 +33,15 @@ const StreamItems = () => {
         alt=" "
         className="absolute -mt-[25px] w-[250px] mt-[20px]"
       />
-      <img
-        src="./items/stream/stick.png"
-        alt=" "
-        className="absolute w-[70px] -bottom-[40px] right-[40px]"
-      />
+      <div className="absolute w-[70px] -bottom-[40px] right-[40px]">
+        <Parallax rotateZ={[0, 90]}>
+          <img
+            src="./items/train/stick.png"
+            alt=" "
+            className="-ml-[15%] w-[80px] lg:w-[110px]"
+          />
+        </Parallax>
+      </div>
     </div>
   );
 };

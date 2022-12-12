@@ -11,7 +11,6 @@ const RockVideo = () => {
       <div className="video-container rounded-[20px] overflow-hidden">
           <video playsInline autoPlay muted loop ref={vidRef}>
             <source src="./items/video/rock/rock.mp4" type="video/mp4" />
-            <source src="./items/video/rock/rock.mp4" type="video/mp4" />
           </video>
         </div>
       <p className="text-[17px] mt-[20px]">

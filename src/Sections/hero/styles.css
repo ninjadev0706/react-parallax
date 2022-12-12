@@ -15,7 +15,6 @@
 }
 
 .hero-video {
-  max-width: 800px;
   width: 100%;
 }
 
@@ -35,7 +34,6 @@
   }
 
   .hero-video {
-    max-width: 800px;
     flex-direction: column-reverse;
     width: 100%;
   }  

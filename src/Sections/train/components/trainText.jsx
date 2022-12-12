@@ -3,7 +3,7 @@ import { useParallax, Parallax } from "react-scroll-parallax";
 
 const TrainText = () => {
   return (
-    <div className="w-6/12 flex relative">
+    <div className="train flex relative">
       <div className="relative flex items-center" style={{ background: "" }}>
         <img src="./items/train/circle.png" alt="" className="w-[420px]" />
         <div className="rounded-full absolute p-16">
@@ -17,7 +17,7 @@ const TrainText = () => {
         </div>
       </div>
       <div className="absolute ml-[250px]">
-        <Parallax rotateX={[-60, 60]}>
+        <Parallax rotateZ={[-45, 45]}>
           <img
             src="./items/train/purple.png"
             alt=""
@@ -26,7 +26,7 @@ const TrainText = () => {
         </Parallax>
       </div>
       <div className=" lg:mt-[300px] mt-[250px] absolute">
-      <Parallax rotateY={[0, 180]}>
+      <Parallax rotateZ={[-20, 20]}>
         <img
           src="./items/train/pipe.png"
           alt=""

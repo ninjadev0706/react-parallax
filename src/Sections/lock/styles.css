@@ -1,3 +1,19 @@
+
+.lock_input {
+  border-width: 1px;
+  border-color: #CCCCCC !important;
+  box-shadow: 0px 0px 10px #40FF9096;
+  border-radius: 15px;
+  padding: 10px 100px;
+}
+
+@media only screen and (max-width: 768px) {
+  .lock-wrap {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
 @media only screen and (min-width: 1500px) {
   .title {
     font-size: 45px;
@@ -8,11 +24,4 @@
   .title {
     font-size: 55px;
   }
-}
-
-.lock_input {
-  border-width: 1px;
-  border-color: aquamarine !important;
-  border-radius: 10px;
-  padding: 4px 100px;
 }

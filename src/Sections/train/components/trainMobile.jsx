@@ -8,7 +8,7 @@ const TrainMobile = () => {
     vidRef.current.play();
   }, []);
   return (
-    <div className="w-6/12">
+    <div className="">
       <img src="./items/train/globe.png" alt="" className="w-[30px] absolute" />
       <img
         src="./items/train/phonecase.svg"
@@ -18,7 +18,6 @@ const TrainMobile = () => {
       <div className="video-container rounded-[20px] overflow-hidden w-[250px]">
         <video playsInline autoPlay muted loop ref={vidRef}>
           <source src="./items/app/app.mp4" type="video/mp4" />
-          <source src="./items/app/app.mp4" type="video/mp4" />
         </video>
       </div>
       <div className="absolute left-[50%] top-[30px]">
@@ -26,8 +25,8 @@ const TrainMobile = () => {
           <img src="./items/train/globe.png" alt=" " className="" />
         </Parallax>
       </div>
-      <div className="absolute lg:right-[150px] right-[50px] bottom-[100px] ">
-        <Parallax rotateZ={[0, 180]}>
+      <div className="absolute lg:right-[-50px] right-[50px] bottom-[100px] ">
+        <Parallax rotateZ={[0, 90]}>
           <img
             src="./items/train/stick.png"
             alt=" "
@@ -35,7 +34,7 @@ const TrainMobile = () => {
           />
         </Parallax>
       </div>
-      <div className="absolute lg:right-[150px] right-[50px] lg:bottom-[200px] bottom-[200px]">
+      <div className="absolute lg:right-[-50px] right-[50px] bottom-[250px]">
         <Parallax rotateZ={[0, 180]}>
           <img src="./items/train/globe.png" alt=" " className="" />
         </Parallax>

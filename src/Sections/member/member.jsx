@@ -7,12 +7,12 @@ import "./styles.css";
 
 const Member = () => {
   return (
-    <div className="max-w-[1200px] w-[90%] m-auto md:pb-[100px] relative">
-      <div className="fanwrap md:-ml-[200px]">
+    <div className="max-w-[1400px] w-[90%] m-auto md:pb-[100px] relative">
+      <div className="fanwrap">
         <div className="md:order-last">
           <MemberText />
         </div>
-        <div>
+        <div className="flex flex-column justify-center">
           <MemberMark />
         </div>
       </div>

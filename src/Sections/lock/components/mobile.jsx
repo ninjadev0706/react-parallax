@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react";
+import { useParallax, Parallax } from "react-scroll-parallax";
 
 const Mobile = () => {
   const vidRef = useRef();
@@ -7,11 +8,10 @@ const Mobile = () => {
     vidRef.current.play();
   }, []);
   return (
-    <div className="flex justify-center w-[90%] md:hidden md:w-6/12">
+    <div className="flex justify-center px-[10%] md:hidden md:w-6/12">
       <div className="relative items-center">
         <div className="md:video-container w-[300px] rounded-[20px] overflow-hidden">
           <video playsInline autoPlay muted loop ref={vidRef}>
-            <source src="./items/app/app.mp4" type="video/mp4" />
             <source src="./items/app/app.mp4" type="video/mp4" />
           </video>
         </div>
@@ -20,16 +20,29 @@ const Mobile = () => {
           alt=" "
           className="absolute w-[300px] top-[-30px]"
         />
-        <img
+        {/* <img
           src="./items/app/app_circle.png"
           alt=" "
           className="absolute max-w-[120px] top-[550px] right-[-60px]"
-        />
-        <img
-          src="./items/app/X.png"
-          alt=" "
-          className="absolute top-[0] max-w-[50px] top-[80px] right-[-10px]"
-        />
+        /> */}
+        <div className="absolute max-w-[120px] top-[500px] right-[-20px]">
+          <Parallax rotateZ={[0, 100]}>
+            <img
+              src="./items/app/app_circle.png"
+              alt=" "
+              className="w-[100px]"
+            />
+          </Parallax>
+        </div>
+        <div className="absolute top-[0] max-w-[50px] top-[80px] right-[-10px]">
+          <Parallax rotateZ={[0, 100]}>
+            <img
+              src="./items/app/X.png"
+              alt=" "
+              className="w-[80px]"
+            />
+          </Parallax>
+        </div>
       </div>
     </div>
   );
