@@ -4,7 +4,7 @@ import { useParallax, Parallax } from "react-scroll-parallax";
 const LockImage = () => {
   return (
     <div className="md:absolute md:right-[0] md:block flex justify-center mt-[40px]">
-      <Parallax rotateY={[0, 480]}>
+      <Parallax rotateY={[-40, 40]}>
         <img
           src="./items/lock/lockgroup.png"
           alt=" "

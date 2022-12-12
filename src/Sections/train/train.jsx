@@ -1,11 +1,11 @@
 import React from 'react'
-
+import './styles.css'
 import TrainText from './components/trainText'
 import TrainMobile from './components/trainMobile'
 
 const Train = () => {
     return (
-        <div className='items-center md:flex hidden relative gap-[100px] m-auto max-w-[1000px]'>
+        <div className='items-center md:flex hidden relative gap-[100px] m-auto max-w-[900px]'>
             <TrainText />
             <TrainMobile />
             {/* <img src='./items/train/train.png' alt=' ' className='-ml-[15%]' />
