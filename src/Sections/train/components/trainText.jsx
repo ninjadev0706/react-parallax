@@ -3,7 +3,7 @@ import { useParallax, Parallax } from "react-scroll-parallax";
 
 const TrainText = () => {
   return (
-    <div className="w-7/12 2xl:w-8/12 flex justify-center relative">
+    <div className="w-7/12 2xl:w-8/12 md:flex justify-center relative">
       <div className="relative flex items-center" style={{ background: "" }}>
         <img
           src="./items/train/ellipse.png"
@@ -42,18 +42,18 @@ const TrainText = () => {
           </p>
         </div>
       </div>
-      <div className="absolute ml-[250px]">
-        <Parallax translateY={[50, -20]}>
+      <div className="absolute 2xl:ml-[350px] xl:ml-[300px] ml-[250px] ml-[200px] 2xl:t-[20px] xl:t-[20px] t-[20px] t-[20px]">
+        <Parallax translateY={[80, -30]}>
           <img
             src="./items/train/purple.png"
             alt=""
-            className="w-[120px] xl:w-[150px] 2xl:w-[180px]"
+            className="w-[120px] 2xl:w-[200px] xl:w-[180px] lg:w-[160px] md:w-[140px]"
           />
         </Parallax>
       </div>
-      <div className="2xl:mt-[500px] xl:mt-[400px] lg:mt-[300px] md:mt-[200px] absolute">
-        <Parallax translateY={[]}>
-          <img src="./items/train/pipe.png" alt="" className="w-[300px]" />
+      <div className="2xl:mt-[600px] xl:mt-[500px] lg:mt-[350px] md:mt-[250px] absolute">
+        <Parallax translateY={[80, -30]}>
+          <img src="./items/train/pipe.png" alt="" className="2xl:w-[300px] xl:w-[250px] lg:w-[200px] md:w-[150px]" />
         </Parallax>
       </div>
     </div>

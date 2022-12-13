@@ -7,18 +7,18 @@ const HeroVideo = () => {
     vidRef.current.play();
   }, []);
   return (
-    <div className="max-w-[1090px] absolute right-[0] w-[100%] mx-[-100px]">
-      <div className="hero-video">
+    <div className="w-[100%] justify-end">
+      <div className="">
         <video
           playsInline
           autoPlay
           muted
           loop
           ref={vidRef}
-          className="md:rounded-[80px] rounded-[40px] "
+          className="xl:rounded-[80px] rounded-[40px] w-[1000px]"
         >
           <source
-            src="./items/hero/video/hero.mp4"
+            src="./items/hero/hero.mp4"
             type="video/mp4"
           />
         </video>

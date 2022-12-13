@@ -3,8 +3,8 @@ import { useParallax, Parallax } from "react-scroll-parallax";
 
 const LockImage = () => {
   return (
-    <div className="md:absolute z-[-10] md:block flex justify-center lg:mt-[80px] mt-[30px] mb-[50px] md:mb-[0] md:bottom-[-100px] right-[0px]">
-      <Parallax translateY={[50, -20]}>
+    <div className="md:absolute z-[-10] md:block flex justify-center lg:mt-[80px] mt-[50px] mb-[50px] md:mb-[30px] md:bottom-[-100px] right-[0px]">
+      <Parallax translateY={[80, -30]}>
         <img
           src="./items/lock/lockgroup.png"
           alt=" "

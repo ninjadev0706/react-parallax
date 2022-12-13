@@ -8,25 +8,23 @@ const TrainMobile = () => {
     vidRef.current.play();
   }, []);
   return (
-    <div className="w-5/12 2xl:w-4/12">
+    <div className="md:w-5/12 2xl:w-4/12 w-[100%] m-auto">
       <img src="./items/train/globe.png" alt="" className="w-[30px] absolute" />
-      <img
-        src="./items/train/phonecase.svg"
-        alt=""
-        className="absolute w-[250px] lg:w-[360px] mt-[-25px]"
-      />
-      <div className="video-container rounded-[20px] overflow-hidden w-[250px] lg:w-[360px]">
-        <video playsInline autoPlay muted loop ref={vidRef}>
-          <source src="./items/train/app.mp4" type="video/mp4" />
+      <div className='text-center md:hidden block'>
+        <p className='font-drukBold text-5xl xl:text-7xl mb-[60px]'>Stream</p>
+      </div>
+      <div className="md:video-container relative w-[250px] lg:w-[360px] m-auto overflow-hidden">
+        <img
+            src="./items/train/mask.png"
+            alt=""
+            className="absolute"
+          />
+          <video playsInline autoPlay muted loop ref={vidRef} className="lg:mx-[20px] lg:my-[45px] p-[4px] rounded-[20px]">
+          <source src="./items/train/train.mp4" type="video/mp4" />
         </video>
       </div>
-      <div className="absolute left-[50%] top-[30px]">
-        <Parallax translateY={[50, -20]}>
-          <img src="./items/train/globe.png" alt=" " className="" />
-        </Parallax>
-      </div>
-      <div className="absolute 2xl:right-[200px] xl:right-[250px] lg:right-[100px] md:right-[10px] bottom-[100px] ">
-        <Parallax translateY={[50, -20]}>
+      <div className="absolute 2xl:right-[50px] xl:right-[50px] lg:right-[0px] md:right-[0px] right-[0px] md:bottom-[100px] bottom-[-100px] ">
+        <Parallax translateY={[80, -30]}>
           <img
             src="./items/train/stick.png"
             alt=" "
@@ -34,8 +32,8 @@ const TrainMobile = () => {
           />
         </Parallax>
       </div>
-      <div className="absolute 2xl:right-[200px] xl:right-[250px] lg:right-[100px] md:right-[10px] bottom-[250px]">
-        <Parallax translateY={[50, -20]}>
+      <div className="absolute 2xl:right-[50px] xl:right-[50px] lg:right-[0px] md:right-[0px] md:bottom-[250px] md:block hidden">
+        <Parallax translateY={[80, -30]}>
           <img src="./items/train/globe.png" alt=" " className="" />
         </Parallax>
       </div>

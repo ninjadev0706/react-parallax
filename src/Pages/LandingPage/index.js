@@ -1,10 +1,8 @@
 
-import VideoControl from "../../assets/Icons/videocontrol.js";
-
 import Hero from "../../Sections/hero/hero";
 import Member from "../../Sections/member/member";
 import Train from "../../Sections/train/train";
-import Communicate from "../../Sections/communicate/communicate";
+import Live from "../../Sections/live/live";
 import GetApp from "../../Sections/getApp/getApp";
 import Tech from "../../Sections/tech/tech";
 import Lock from "../../Sections/lock/lock";
@@ -20,7 +18,7 @@ const LandingPage = () => {
       <Member />
       <Train />
       <Stream />
-      <Communicate />
+      <Live />
       <Tech />
       <GetApp />
       <Lock />

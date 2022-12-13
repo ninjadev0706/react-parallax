@@ -16,15 +16,15 @@ const AppText = () => {
         <p className="block md:hidden font-drukBold leading-[1] text-[35px]">
           Control.
         </p>
-        <div className="flex items-end mt-[50px] md:mt-[120px] md:mb-[80px] relative">
-          <p className="text-[120px] md:text-[150px] lg:text-[170px] xl:text-[200px] 2xl:text-[250px] font-drukBold text-[#2c05f7]">
+        <div className="flex items-end md:mt-[50px] mt-[20px] relative">
+          <p className="text-[120px] md:text-[100px] lg:text-[150px] xl:text-[200px] 2xl:text-[250px] leading-[120px] md:leading-[100px] lg:leading-[150px] xl:leading-[200px] 2xl:leading-[250px] font-drukBold text-[#2c05f7]">
             80
           </p>
-          <p className="font-drukBold creator_pro mb-[-30px] md:mb-[-70px] font-bold text-[#2c05f7]">
+          <p className="font-drukBold creator_pro font-bold text-[#2c05f7]">
             %
           </p>
         </div>
-        <p className="text-[20px] md:text-[30px] font-helvetica font-bold text-[#2c05f7] my-[20px] goes">
+        <p className="text-[20px] md:text-[30px] font-helvetica font-bold text-[#2c05f7] mt-[-10px] mb-[20px] goes">
           Goes to creators
         </p>
         <div className="flex items-end mt-[-20px] relative">
@@ -38,13 +38,13 @@ const AppText = () => {
         <p className="text-[20px] md:text-[30px] font-bold font-helvetica text-[#2c05f7] goes">
           Goes for running the service
         </p>
-        <p className="my-[20px] text-[17px] font-light leading-[20px]">
+        <p className="my-[20px] md:text-[17px] text-[14px] font-light leading-[20px]">
           Unlike big tech, you deserve more than crumbs. We don't shove ads down
           users' throats, we don't sell their data, and the importantly it is
           all about you.
         </p>
       </div>
-      <div className="app-wrap">
+      <div className="app-wrap w-[100%]">
         <img src="./items/apple.png" alt=" " className="h-[30px]" />
         <p className="app-content">Get the app</p>
       </div>

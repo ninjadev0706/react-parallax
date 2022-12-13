@@ -1,0 +1,53 @@
+/* .landingPage-container {
+  height: 100vh;
+    overflow-y:scroll;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 1;
+}
+
+.section-container {
+  position: sticky;
+  height: 100vh;
+  top: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 9;
+} */
+
+.wrapper {
+  font-size: 18px;
+  line-height: 1.9em;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; /*System Font Stack*/
+}
+
+.wrapper {
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 1;
+}
+
+.section {
+  box-sizing: border-box;
+  position: relative;
+  z-index: 99;
+}
+.sticky {
+  position: sticky;
+  z-index: 9;
+}
+
+.section--s1 {
+  top: 40px;
+  max-height: calc(100vh - 40px) /* prevents hidden content due to the top position */
+}
+.section--s2 {
+  top: 80px;
+  max-height: calc(100vh - 80px)
+}
+.section--s3 {
+  top: 120px;
+  max-height: calc(100vh - 120px)
+}

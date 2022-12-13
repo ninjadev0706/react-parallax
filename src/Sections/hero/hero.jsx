@@ -1,5 +1,4 @@
 import React from "react";
-import { useParallax, Parallax } from "react-scroll-parallax";
 import HeroText from "./components/heroText";
 import HeroVideo from "./components/heroVideo";
 
@@ -7,7 +6,7 @@ import "./styles.css";
 
 const Hero = () => {
   return (
-    <div className="w-[100%] md:px-[115px] pt-[30px] md:pt-[60px]">
+    <div className="w-[100%] 2xl:px-[115px] xl:px-[75px] lg:px-[50px] pt-[30px] md:pt-[60px]">
       <img src="./items/logo.png" alt=" " className="mb-[10px] md:mb-20" />
       {/* <div className="flex justify-center">
         <img
@@ -20,10 +19,10 @@ const Hero = () => {
         <HeroText />
         <HeroVideo />
       </div>
-      <div className="mt-[200px] ml-[40%] md:mb-[200px] mb-[50px]">
-        {/* <Parallax translateY={[50, -20]}> */}
+      <div className="md:mt-[100px] mt-[80px] ml-[40%] md:mb-[200px] mb-[80px]">
+        {/* <Parallax translateY={[80, -30]}> */}
         <img
-          className="w-[80px] md:w-[120px] lg:w-[150px] floating"
+          className="w-[114px] lg:w-[174px] floating"
           name="big_fan"
           src="./items/hero/big_fan.png"
           alt=" "
