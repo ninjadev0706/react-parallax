@@ -33,7 +33,7 @@ const TrainText = () => {
           className="2xl:w-[650px] xl:w-[550px] lg:w-[450px] md:w-[350px] "
         />
         <div className="rounded-full absolute 2xl:p-[80px] xl:p-[70px] lg:p-[60px] md:p-[50px]">
-          <p className="font-drukBold 2xl:text-[55px] xl:text-[45px] lg:text-[35px] md:text-[25px] 2xl:leading-[60px] xl:leading-[50px] lg:leading-[40px] md:leading-[30px]">
+          <p className="font-drukBold 2xl:text-[65px] xl:text-[55px] xl:text-[45px] lg:text-[35px] md:text-[25px] 2xl:leading-[60px] xl:leading-[50px] lg:leading-[40px] md:leading-[30px]">
             Hop on the web3 train!
           </p>
           <p className="z-10 xl:text-[17px] md:text-[13px] mt-3">
@@ -43,12 +43,16 @@ const TrainText = () => {
         </div>
       </div>
       <div className="absolute ml-[250px]">
-        <Parallax rotateZ={[-45, 45]}>
-          <img src="./items/train/purple.png" alt="" className="w-[120px] " />
+        <Parallax translateY={[50, -20]}>
+          <img
+            src="./items/train/purple.png"
+            alt=""
+            className="w-[120px] xl:w-[150px] 2xl:w-[180px]"
+          />
         </Parallax>
       </div>
-      <div className=" lg:mt-[300px] 2xl:mt-[500px] xl:mt-[400px] lg:mt-[300px] md:mt-[200px] absolute">
-        <Parallax rotateZ={[-20, 20]}>
+      <div className="2xl:mt-[500px] xl:mt-[400px] lg:mt-[300px] md:mt-[200px] absolute">
+        <Parallax translateY={[]}>
           <img src="./items/train/pipe.png" alt="" className="w-[300px]" />
         </Parallax>
       </div>

@@ -6,7 +6,7 @@ import './styles.css';
 
 const GetApp = () => {
   return (
-    <div className="max-w-[1500px] w-[80%] m-auto md:flex justify-center items-center gap-[50px] relative">
+    <div className="max-w-[1500px] md:w-[80%] m-auto md:flex justify-center items-center gap-[50px] relative">
       <AppText />
       <AppMobile />
     </div>

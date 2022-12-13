@@ -8,7 +8,8 @@ const ArtVideo = () => {
   }, []);
   return (
     <div className="md:w-6/12 md:max-w-[300px] p-[30px]">
-      <div className="video-wrap m-auto rounded-[50px] overflow-hidden">
+      <div className="video-wrap art_video">
+      <img src="./items/video/video_mark.svg" alt="" className="absolute m-[20px] z-[-20]" />
         <video playsInline autoPlay muted loop ref={vidRef}>
           <source src="./items/video/art/art.mp4" type="video/mp4" />
         </video>

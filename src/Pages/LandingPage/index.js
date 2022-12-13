@@ -15,8 +15,7 @@ import "./style.css";
 
 const LandingPage = () => {
   return (
-    <div className="App overflow-x-hidden">
-      {/* <Landing /> */}
+    <div className="App overflow-x-hidden px-[35px]">
       <Hero />
       <Member />
       <Train />

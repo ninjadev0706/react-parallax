@@ -7,13 +7,13 @@ import "./styles.css";
 const Lock = () => {
   return (
     <div>
-      <div className="lock-wrap max-w-[800px] w-[80%] m-auto relative">
-        <div className="">
-          <div className="relative mt-[0] md:mt-[100px] md:top-[300px] md:ml-[150px] max-w-[600px]">
-            <p className="font-drukBold 2xl:text-[55px] md:text-[40px] text-[30px] font-bold">
+      <div className="lock-wrap max-w-[1200px] md:w-[80%] m-auto relative">
+        <div className="md:ml-[-25px] lg:ml-[-50px] xl:ml-[-75px] 2xl:ml-[-100px]">
+          <div className="relative mt-[0] lg:mt-[100px] md:top-[300px] md:ml-[150px] max-w-[650px]">
+            <p className="font-drukBold 2xl:text-[65px] xl:text-[55px] lg:text-[45px] md:text-[40px] text-[35px] font-bold">
               Lock-up your handle now!
             </p>
-            <p className="text-[20px] font-bold ml-[10px] my-[20px]">
+            <p className="text-[20px] font-bold ml-[10px] md:my-[20px] my-[10px]">
               Select a username
             </p>
             <div className="flex justify-center relative items-center gap-[30px]">
@@ -32,14 +32,14 @@ const Lock = () => {
           </div>
         </div>
         <div className="absolute block md:hidden left-[0] top-[0] my-[30px]">
-          <Parallax rotateZ={[0, 180]}>
+          <Parallax translateY={[50, -20]}>
             <img src="./items/member/small_fan.png" alt="" width="50px" />
           </Parallax>
         </div>
         <LockImage />
       </div>
-      <div className="md:hidden block ml-[20px] mt-[100px] mb-[0px]">
-        <Parallax rotateZ={[0, 50]}>
+      <div className="md:hidden block ml-[20px] mt-[100px] mb-[50px]">
+        <Parallax translateY={[50, -20]}>
           <img src="./items/tech/small_pip.png" alt=" " className="w-[80px]" />
         </Parallax>
       </div>

@@ -7,8 +7,8 @@ const CommunicateMobile = () => {
     vidRef.current.play();
   }, []);
   return (
-    <div>
-      <div className="video-container rounded-[20px] overflow-hidden w-[250px]">
+    <div className="w-6/12">
+      <div className="video-container rounded-[20px] overflow-hidden w-[250px] lg:w-[360px]">
         <video
           playsInline
           autoPlay
