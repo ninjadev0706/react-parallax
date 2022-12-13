@@ -24,7 +24,7 @@ const AppText = () => {
             %
           </p>
         </div>
-        <p className="text-[20px] md:text-[30px] font-drukBold font-bold text-[#2c05f7] my-[20px] goes">
+        <p className="text-[20px] md:text-[30px] font-helvetica font-bold text-[#2c05f7] my-[20px] goes">
           Goes to creators
         </p>
         <div className="flex items-end mt-[-20px] relative">
@@ -35,7 +35,7 @@ const AppText = () => {
             %
           </p>
         </div>
-        <p className="text-[20px] md:text-[30px] font-bold font-drukBold text-[#2c05f7] goes">
+        <p className="text-[20px] md:text-[30px] font-bold font-helvetica text-[#2c05f7] goes">
           Goes for running the service
         </p>
         <p className="my-[20px] text-[17px] font-light leading-[20px]">

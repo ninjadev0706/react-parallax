@@ -7,7 +7,7 @@ import "./styles.css";
 
 const Video = () => {
   return (
-    <div className="md:mt-[500px] mb-[50px]">
+    <div className="md:mt-[600px] mb-[50px]">
       <div className="relative m-auto">
         <Rock />
         <Dancing />
