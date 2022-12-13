@@ -13,27 +13,27 @@ const TrainText = () => {
             m-auto 
             max-w-[5000px] 
             -z-10 
-            2xl:w-[2000px] 
-            xl:w-[1600px] 
-            lg:w-[1200px] 
-            md:w-[800px] 
+            2xl:w-[2300px] 
+            xl:w-[1800px] 
+            lg:w-[1400px] 
+            md:w-[1000px] 
             2xl:left-[-800px] 
-            xl:left-[-600px]
-            lg:left-[-400px]
-            md:left-[-300px]
-            2xl:top-[-300px] 
-            xl:top-[-200px]
-            lg:top-[-100px]
-            md:top-[-30px]
+            xl:left-[-800px]
+            lg:left-[-600px]
+            md:left-[-400px]
+            2xl:top-[-200px] 
+            xl:top-[-240px]
+            lg:top-[-150px]
+            md:top-[-120px]
           "
         />
         <img
           src="./items/train/circle.png"
           alt=""
-          className="2xl:w-[650px] xl:w-[550px] lg:w-[450px] md:w-[350px] "
+          className="2xl:w-[800px] xl:w-[650px] lg:w-[500px] md:w-[350px] "
         />
-        <div className="rounded-full absolute 2xl:p-[80px] xl:p-[70px] lg:p-[60px] md:p-[50px]">
-          <p className="font-drukBold 2xl:text-[65px] xl:text-[55px] xl:text-[45px] lg:text-[35px] md:text-[25px] 2xl:leading-[60px] xl:leading-[50px] lg:leading-[40px] md:leading-[30px]">
+        <div className="rounded-full absolute 2xl:p-[100px] xl:p-[80px] lg:p-[60px] md:p-[50px]">
+          <p className="font-drukBold 2xl:text-[70px] xl:text-[60px] xl:text-[50px] lg:text-[35px] md:text-[25px] 2xl:leading-[60px] xl:leading-[50px] lg:leading-[40px] md:leading-[30px]">
             Hop on the web3 train!
           </p>
           <p className="z-10 xl:text-[17px] md:text-[13px] mt-3">

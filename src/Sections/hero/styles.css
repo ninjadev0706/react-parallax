@@ -15,7 +15,7 @@
 }
 
 .hero-video {
-  width: 100%;
+  box-shadow: inset 0px, 50px, 0px, 50px white;
 }
 
 @media only screen and (max-width: 1023px) {
