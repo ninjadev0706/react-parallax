@@ -5,7 +5,7 @@ import RockVideo from './components/rockVideo'
 
 const Rock = () => {
     return (
-        <div className='md:flex hidden mb-[150px] justify-center gap-[100px] lg:gap-[150px] xl:gap-[200px] 2xl:gap-[250px] w-full'>
+        <div className='md:flex hidden mb-[150px] justify-center w-[80%]'>
             <RockImage />
             <RockVideo />
         </div>

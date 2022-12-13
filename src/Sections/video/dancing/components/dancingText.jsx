@@ -3,7 +3,7 @@ import { useParallax, Parallax } from "react-scroll-parallax";
 
 const DancingText = () => {
   return (
-    <div className="md:w-6/12 mr-[200px] relative md:mt-[0] mt-[100px] mr-[-150px]">
+    <div className="md:w-6/12 relative md:mt-[0] mt-[100px] lg:mr-[-150px]">
       <div className="flex mb-[20px]">
         <div className="flex">
           <img

@@ -7,14 +7,14 @@ const RockVideo = () => {
     vidRef.current.play();
   }, []);
   return (
-    <div className="relative">
-      <div className="video-wrapper">
-        {/* <img
-          src="./items/video/video_mark.svg"
-          alt=""
-          className="absolute m-[20px]"
-        /> */}
-        <video playsInline autoPlay muted loop ref={vidRef} className="video-size mx-[-200px]">
+    <div className="w-6/12 max-w-[300px]">
+      <div className="video-wrap">
+        <video playsInline autoPlay muted loop ref={vidRef}>
+          <img
+            src="./items/video/video_mark.svg"
+            alt=""
+            className="absolute m-[20px]"
+          />
           <source src="./items/video/rock/rock.mp4" type="video/mp4" />
         </video>
       </div>

@@ -1,3 +1,36 @@
+.app-wrap {
+  border: 1px solid;
+  border-radius: 10px;
+  gap: 15px;
+  padding: 10px 70px;
+  width: fit-content;
+  display: flex;
+}
+
+.app-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+.lock_input {
+  border-width: 1px;
+  border-color: aquamarine !important;
+  border-radius: 10px;
+  padding: 4px 4px 4px 110px;
+}
+
+.video-size {
+  padding-top: 56.25%;
+  position: relative;
+}
+
+.video-size > div {
+  position: absolute;
+}
+
+
 @media only screen and (max-width: 767px) {
   .app-wrap {
     width: 100%;
@@ -7,16 +40,10 @@
 }
 
 .video-wrapper {
-  width: 1000px;
-  height: 453px;
-  margin: auto;
-  border-radius: 40px;
+  width: auto;
+  height: auto;
+  /* margin: auto;
+  border-radius: 40px; */
   overflow: hidden;
   position: relative;
-  z-index: 10;
-}
-
-.video-size {
-  width: 1000px;
-  position: absolute;
 }

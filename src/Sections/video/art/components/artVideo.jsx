@@ -7,9 +7,13 @@ const ArtVideo = () => {
     vidRef.current.play();
   }, []);
   return (
-    <div className="md:w-6/12 md:max-w-[300px] p-[30px]">
-      <div className="video-wrap art_video">
-      <img src="./items/video/video_mark.svg" alt="" className="absolute m-[20px] z-[-20]" />
+    <div className="md:w-6/12 md:max-w-[320px] lg:p-[30px] w-[100%]">
+      <div className="w-[300px] h-[420px] m-auto md:m-[0px] overflow-hidden rounded-[60px]">
+        <img
+          src="./items/video/video_mark.svg"
+          alt=""
+          className="absolute m-[30px]"
+        />
         <video playsInline autoPlay muted loop ref={vidRef}>
           <source src="./items/video/art/art.mp4" type="video/mp4" />
         </video>
