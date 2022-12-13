@@ -4,7 +4,7 @@ import "./styles.css";
 
 const Tech = () => {
   return (
-    <div className="hidden md:block lg:px-[15%] xl:px-[20%] px-[10%] py-[100px]">
+    <div className="hidden md:block lg:px-[15%] xl:px-[20%] px-[10%] pb-[100px] mt-[-50px]">
       <div className="mb-[120px] block text-center leading-[70px]">
         <p className="max-w-[1200px] w-[100%] 2xl:text-[80px] xl:text-[65px] md:text-[45px] text-[35px] font-drukBold m-auto leading-[1]">
           You are the hero, not the big tech.
