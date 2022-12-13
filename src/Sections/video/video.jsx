@@ -15,7 +15,7 @@ const Video = () => {
       </div>
       <div className="pb-[40px] px-[10%]">
         <div className="mb-[40px]">
-          <p className="font-drukBold text-center m-auto leading-[1.3] 2xl:text-[65px] xl:text-[55px] md:text-[40px] text-[35px] font-black md:max-w-[700px]">
+          <p className="font-drukBold text-center m-auto leading-[1.3] 2xl:text-[65px] xl:text-[55px] md:text-[40px] text-[35px] font-black md:max-w-[900px]">
             Built for creators by Creators.
           </p>
         </div>
