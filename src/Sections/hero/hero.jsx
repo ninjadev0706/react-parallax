@@ -6,7 +6,7 @@ import "./styles.css";
 
 const Hero = () => {
   return (
-    <div className="w-[100%] 2xl:px-[115px] xl:px-[75px] lg:px-[50px] pt-[30px] md:pt-[60px]">
+    <div className="w-[100%] 2xl:px-[150px] xl:px-[110px] lg:px-[85px] pt-[30px] md:pt-[60px]">
       <img src="./items/logo.png" alt=" " className="mb-[10px] md:mb-20" />
       {/* <div className="flex justify-center">
         <img

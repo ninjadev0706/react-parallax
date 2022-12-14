@@ -7,7 +7,7 @@ import "./styles.css";
 
 const Footer = () => {
   return (
-    <div className="bg-[#f5f5f5] mx-[-35px]">
+    <div className="bg-[#f5f5f5] mx-[-35px] px-[35px]">
       <div className="title pt-[100px] pb-[50px] md:py-[170px] max-w-[1200px] w-[80%] m-auto">
         <List />
         <Contact />

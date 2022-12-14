@@ -7,17 +7,17 @@ const StreamMobile = (props) => {
     vidRef.current.play();
   }, []);
   return (
-    <div className="lg:w-6/12 m-auto section-container">
+    <div className="lg:w-6/12 m-auto">
       {/* <Parallax translateY={[20, 20]}> */}
         <div className="video-container relative m-auto rounded-[20px] overflow-hidden w-[250px] lg:w-[360px]">
-          <img src="./items/app/mask.png" alt="" className="absolute" />
+          {/* <img src="./items/app/mask.png" alt="" className="absolute" /> */}
           <video
             playsInline
             autoPlay
             muted
             loop
             ref={vidRef}
-            className="lg:p-[15px] p-[12px]"
+            className="lg:p-[15px] p-[12px] pb-0"
           >
             <source
               src="./items/live/stream.mp4"

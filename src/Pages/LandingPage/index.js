@@ -13,11 +13,11 @@ import "./style.css";
 
 const LandingPage = () => {
   return (
-    <div className="App overflow-x-hidden px-[35px]">
+    <div className="App overflow-x-hidden">
       <Hero />
       <Member />
       <Train />
-      <Stream />
+      {/* <Stream /> */}
       <Live />
       <Tech />
       <GetApp />

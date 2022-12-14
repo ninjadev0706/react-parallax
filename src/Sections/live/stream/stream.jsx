@@ -4,7 +4,7 @@ import StreamList from "./components/streamList";
 
 const Stream = () => {
   return (
-    <div className="max-w-[1000px] md:px-[10%] m-auto justify-center items-center md:flex gap-[100px]">
+    <div className="max-w-[1000px] m-auto pl-[10%] justify-center items-center md:flex gap-[100px] sticky top-0 z-10">
       <StreamMobile />
       <StreamList />
     </div>

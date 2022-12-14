@@ -7,7 +7,7 @@ import "./styles.css";
 const Lock = () => {
   return (
     <div>
-      <div className="lock-wrap max-w-[1200px] md:w-[80%] m-auto relative">
+      <div className="lock-wrap max-w-[1200px] md:w-[80%] m-auto relative px-[35px]">
         <div className="md:ml-[-25px] lg:ml-[-50px] xl:ml-[-75px] 2xl:ml-[-100px]">
           <div className="relative mt-[0] lg:mt-[100px] md:top-[300px] md:ml-[150px] xl:ml-[250px] max-w-[650px]">
             <p className="font-drukBold 2xl:text-[65px] xl:text-[55px] lg:text-[45px] md:text-[40px] text-[35px] font-bold">
