@@ -18,7 +18,7 @@ const RockVideo = () => {
           <source src="./items/video/rock/rock.mp4" type="video/mp4" />
         </video>
       </div>
-      <p className="md:text-[17px] text-[16px] pt-[40px] w-[300px] m-auto">
+      <p className="mg:text-[17px] text-[15px] pt-[40px] w-[300px] pl-[40px] m-auto">
         Got craft? Show it to your fans and followers. We love watching pottery!
       </p>
     </div>

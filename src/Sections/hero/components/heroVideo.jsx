@@ -7,7 +7,7 @@ const HeroVideo = () => {
     vidRef.current.play();
   }, []);
   return (
-    <div className="w-[100%] justify-end">
+    <div className="w-[100%] mb-[20px] justify-end">
       <div className="md:block hidden">
         <video
           playsInline
@@ -15,7 +15,7 @@ const HeroVideo = () => {
           muted
           loop
           ref={vidRef}
-          className="xl:rounded-[80px] rounded-[40px] w-[1000px]"
+          className="rounded-[80px] w-[1000px]"
         >
           <source
             src="./items/hero/hero.mp4"
@@ -30,7 +30,7 @@ const HeroVideo = () => {
           muted
           loop
           ref={vidRef}
-          className="xl:rounded-[80px] rounded-[40px] w-[1000px]"
+          className="rounded-[80px] w-[1000px]"
         >
           <source
             src="./items/hero/mobile_hero.mp4"

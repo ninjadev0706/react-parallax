@@ -26,21 +26,21 @@ const Lock = () => {
               <img
                 src="./items/lock/Path.svg"
                 alt=" "
-                className="w-[40px] md:w-[50px] lg:w-[60px] xl:w-[70px]"
+                className="w-[48px] md:w-[50px] lg:w-[60px] xl:w-[70px]"
               />
             </div>
           </div>
         </div>
-        <div className="absolute block md:hidden left-[0] top-[0] my-[30px]">
+        <div className="absolute block md:hidden left-[0] top-[0] mt-[20px]">
           <Parallax translateY={[80, -30]}>
             <img src="./items/member/small_fan.png" alt="" width="50px" />
           </Parallax>
         </div>
         <LockImage />
       </div>
-      <div className="md:hidden block ml-[20px] mt-[100px] mb-[50px]">
-        <Parallax translateY={[80, -30]}>
-          <img src="./items/tech/small_pipe.png" alt=" " className="w-[80px]" />
+      <div className="md:hidden block ml-[20px] md:mt-[100px] mt-[60px] md:mb-[50px] mb-[15px]">
+        <Parallax translateY={[20, -30]}>
+          <img src="./items/tech/small_pipe.png" alt=" " className="w-[80px] z-10" />
         </Parallax>
       </div>
       <Mobile />

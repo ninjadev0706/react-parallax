@@ -19,10 +19,11 @@ const List = () => {
       </div>
       <div className="mb-[80px]">
         <img
-          src="./items/footer-logo.svg"
+          src="./items/footerlogo.png"
           alt=" "
           className="w-[120px] md:w-[170px]"
         />
+        <p className="footer_logo font-semibold">Beta</p>
       </div>
     </div>
   );
