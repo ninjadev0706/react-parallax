@@ -2,9 +2,8 @@
   border: 1px solid;
   border-radius: 10px;
   gap: 15px;
-  padding: 5px 50px;
-  width: fit-content;
   display: flex;
+  justify-content: center;
 }
 
 .app-content {
@@ -19,13 +18,21 @@
 }
 
 .creator_pro {
-  font-size: 30px;
+  font-size: 35px;
   font-weight: bold;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .app-wrap {
-    width: 100%;
+    justify-content: center;
+  }
+}
+.font-helvetica {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media only screen and (min-width: 768px) {
+  .app-wrap {
     justify-content: center;
   }
 }

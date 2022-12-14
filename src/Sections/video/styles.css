@@ -2,9 +2,8 @@
   border: 1px solid;
   border-radius: 10px;
   gap: 15px;
-  padding: 10px 70px;
-  width: fit-content;
   display: flex;
+  justify-content: center;
 }
 
 .app-content {
@@ -14,17 +13,34 @@
   font-weight: bold;
 }
 
-.lock_input {
-  border-width: 1px;
-  border-color: aquamarine !important;
-  border-radius: 10px;
-  padding: 4px 100px;
+.video-size {
+  
+  
 }
 
-@media only screen and (max-width: 768px) {
+.video-size > div {
+  position: absolute;
+}
+
+
+@media only screen and (max-width: 767px) {
   .app-wrap {
-    width: 100%;
     justify-content: center;
     padding: 10px 0px;
   }
+}
+
+@media only screen and (min-width: 768px) {
+  .app-wrap {
+    justify-content: center;
+  }
+}
+
+.video-wrapper {
+  width: auto;
+  height: auto;
+  /* margin: auto;
+  border-radius: 40px; */
+  overflow: hidden;
+  position: relative;
 }

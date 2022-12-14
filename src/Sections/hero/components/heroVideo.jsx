@@ -7,19 +7,34 @@ const HeroVideo = () => {
     vidRef.current.play();
   }, []);
   return (
-    <div className="md:w-7/12 flex justify-end max-h-[550px]">
-      <div className="hero-video rounded-[80px] overflow-hidden">
+    <div className="w-[100%] mb-[20px] justify-end">
+      <div className="md:block hidden">
         <video
           playsInline
           autoPlay
           muted
           loop
           ref={vidRef}
+          className="rounded-[80px] w-[1000px]"
         >
           <source
-            src="./items/hero/video/hero.mp4"
+            src="./items/hero/hero.mp4"
             type="video/mp4"
-            style={{maxWidth: '125%'}}
+          />
+        </video>
+      </div>
+      <div className="md:hidden block">
+        <video
+          playsInline
+          autoPlay
+          muted
+          loop
+          ref={vidRef}
+          className="rounded-[80px] w-[1000px]"
+        >
+          <source
+            src="./items/hero/mobile_hero.mp4"
+            type="video/mp4"
           />
         </video>
       </div>

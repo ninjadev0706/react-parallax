@@ -2,9 +2,8 @@
   border: 1px solid;
   border-radius: 10px;
   gap: 15px;
-  padding: 5px 50px;
-  width: fit-content;
   display: flex;
+  justify-content: center;
 }
 
 .app-content {
@@ -15,16 +14,11 @@
 }
 
 .hero-video {
-  width: 100%;
+  box-shadow: inset 0px, 50px, 0px, 50px white;
 }
 
-.hero-wrap {
-
-}
-
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1023px) {
   .app-wrap {
-    width: 100%;
   }
 
   .hero-wrap {
@@ -39,14 +33,23 @@
   }  
 }
 
-@media only screen and (min-width: 1500px) {
-  .title {
-    font-size: 45px;
+@media only screen and (min-width: 768px) {
+  .app-wrap {
+    justify-content: center;
   }
 }
 
-@media only screen and (min-width: 1700px) {
-  .title {
-    font-size: 55px;
-  }
+.floating {  
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+@keyframes floating {
+  from { transform: translate(0,  0px); }
+  65%  { transform: translate(0, 15px); }
+  to   { transform: translate(0, -0px); }    
 }

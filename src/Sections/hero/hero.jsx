@@ -1,5 +1,4 @@
 import React from "react";
-import { useParallax, Parallax } from "react-scroll-parallax";
 import HeroText from "./components/heroText";
 import HeroVideo from "./components/heroVideo";
 
@@ -7,7 +6,7 @@ import "./styles.css";
 
 const Hero = () => {
   return (
-    <div className="w-[100%] pt-[30px] md:px-[100px] lg:px-[150px] xl:px-[150px] px-[20px] md:pt-[60px] mb-20 gap-[30px]">
+    <div className="w-[100%] 2xl:px-[115px] xl:px-[75px] lg:px-[50px] pt-[30px] md:pt-[60px]">
       <img src="./items/logo.png" alt=" " className="mb-[10px] md:mb-20" />
       {/* <div className="flex justify-center">
         <img
@@ -16,19 +15,19 @@ const Hero = () => {
           className="block md:hidden w-[100%]"
         />
       </div> */}
-      <div className="hero-wrap md:flex items-center md:gap-[50px]">
+      <div className="hero-wrap lg:flex items-center relative">
         <HeroText />
         <HeroVideo />
       </div>
-      <div className="mt-[50px]  ml-[40%] md:mb-[100px] mb-[50px]">
-        <Parallax translateX={[-20, 20]}>
-          <img
-            className="w-[80px] md:w-[120px] lg:w-[150px]"
-            name="big_fan"
-            src="./items/hero/big_fan.png"
-            alt=" "
-          />
-        </Parallax>
+      <div className="md:mt-[100px] mt-[80px] ml-[40%] md:mb-[200px] mb-[80px]">
+        {/* <Parallax translateY={[80, -30]}> */}
+        <img
+          className="w-[114px] lg:w-[174px] floating"
+          name="big_fan"
+          src="./items/hero/big_fan.png"
+          alt=" "
+        />
+        {/* </Parallax> */}
       </div>
     </div>
   );

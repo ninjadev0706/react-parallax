@@ -2,24 +2,18 @@ import React from "react";
 
 import MemberMark from "./components/memberMark";
 import MemberText from "./components/memberText";
-import { useParallax, Parallax } from "react-scroll-parallax";
 import "./styles.css";
 
 const Member = () => {
   return (
-    <div className="max-w-[1400px] w-[90%] m-auto md:pb-[100px] relative">
-      <div className="fanwrap">
+    <div className="md:ml-[-150px] lg:ml-[-100px] xl:ml-[-150px] 2xl:ml-[-200px] lg:mb-[300px] mb-[200px] relative">
+      <div className="fanwrap items-center">
         <div className="md:order-last">
           <MemberText />
         </div>
         <div className="flex flex-column justify-center">
           <MemberMark />
         </div>
-      </div>
-      <div className="absolute hidden md:block xl:right-20 md:right-5 xl:bottom-32 md:bottom-20">
-        <Parallax rotateZ={[0, 180]}>
-          <img src="./items/member/small_fan.png" alt="" width="80px" />
-        </Parallax>
       </div>
     </div>
   );
