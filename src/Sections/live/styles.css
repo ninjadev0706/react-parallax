@@ -33,25 +33,25 @@
   position: absolute;
 }
 
-.scrollmagic-pin-spacer .scrollmagic-pin-spacer > div:nth-child(1) {
+.scrollmagic-pin-spacer .scrollmagic-pin-spacer > div:nth-child(1), .scrollmagic-pin-spacer > div:nth-child(1) {
   margin-left: 35% !important;
   top: 75px !important;
 }
 
 @media screen and (max-width: 1280px) {
-  .scrollmagic-pin-spacer .scrollmagic-pin-spacer > div:nth-child(1) {
+  .scrollmagic-pin-spacer .scrollmagic-pin-spacer > div:nth-child(1), .scrollmagic-pin-spacer > div:nth-child(1) {
     margin-left: 25% !important;
   }
 }
 
 @media screen and (max-width: 1024px) {
-  .scrollmagic-pin-spacer .scrollmagic-pin-spacer > div:nth-child(1) {
+  .scrollmagic-pin-spacer .scrollmagic-pin-spacer > div:nth-child(1), .scrollmagic-pin-spacer > div:nth-child(1) {
     margin-left: 21% !important;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .scrollmagic-pin-spacer .scrollmagic-pin-spacer > div:nth-child(1) {
+  .scrollmagic-pin-spacer .scrollmagic-pin-spacer > div:nth-child(1), .scrollmagic-pin-spacer > div:nth-child(1) {
     margin-left: 15% !important;
   }
 }
