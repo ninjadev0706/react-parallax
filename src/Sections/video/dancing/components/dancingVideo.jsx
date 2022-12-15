@@ -20,9 +20,9 @@ const DancingVideo = () => {
         </video>
       </div>
       </div>
-      <p className="mg:text-[17px] text-[15px] pt-[40px] w-[300px] pl-[40px] m-auto">
+      {/* <p className="mg:text-[17px] text-[15px] pt-[40px] w-[300px] pl-[40px] m-auto">
         Got craft? Show it to your fans and followers. We love watching pottery!
-      </p>
+      </p> */}
     </div>
   );
 };

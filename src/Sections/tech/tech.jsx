@@ -10,10 +10,10 @@ const Tech = () => {
           You are the hero, not the big tech.
         </p>
         <div className="h-[20px]"></div>
-        <p className="max-w-[600px] w-[100%] md:text-[17px] text-[14px] m-auto leading-[20px] mt-[20px]">
+        {/* <p className="max-w-[600px] w-[100%] md:text-[17px] text-[14px] m-auto leading-[20px] mt-[20px]">
           We are doing this to eliminate the middle man, so case in point, we
           take zero commission, your earning are yours, fully.
-        </p>
+        </p> */}
       </div>
       <Parallax translateY={[80, -30]}>
         <img src="./items/tech/small_pipe.png" alt=" " className="ml-[25%] mb-[150px]" />

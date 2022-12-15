@@ -23,7 +23,7 @@ const List = () => {
           alt=" "
           className="w-[120px] md:w-[170px]"
         />
-        <p className="footer_logo font-semibold">Beta</p>
+        <p className="footer_logo font-semibold text-[1rem]">Beta</p>
       </div>
     </div>
   );

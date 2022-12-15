@@ -66,7 +66,7 @@ const Live = () => {
                     </video>
                   </div>
                   <p className="bg-white font-drukBold font-bold leading-[2] md:text-[40px] lg:text-[55px] text-[35px] w-[400px]" id="index">
-                    Listen
+                    Chat
                   </p>
                 </div>
               </Tween>
@@ -92,7 +92,7 @@ const Live = () => {
                     </video>
                   </div>
                   <p className=" bg-white font-drukBold font-bold leading-[2] md:text-[40px] lg:text-[55px] text-[35px] w-[400px]" id="index">
-                    Chat
+                    Listen
                   </p>
                 </div>
               </Tween>

@@ -8,14 +8,14 @@ const HeroVideo = () => {
   }, []);
   return (
     <div className="w-[100%] mb-[20px] justify-end">
-      <div className="md:block hidden">
+      <div className="video-size md:block hidden ml-[20px]">
         <video
           playsInline
           autoPlay
           muted
           loop
           ref={vidRef}
-          className="rounded-[80px] w-[1000px]"
+          className="rounded-[80px] w-[1200px] max-w-[827px] xl:max-w-[1000px] 2xl:max-w-[1200px]"
         >
           <source
             src="./items/hero/hero.mp4"
