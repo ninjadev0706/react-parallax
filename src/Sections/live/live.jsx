@@ -19,7 +19,7 @@ const Live = () => {
         <Controller>
           <Scene
             triggerHook="onLeave"
-            duration="100%"
+            duration="200%"
             pin
           >
             <Timeline
