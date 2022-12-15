@@ -25,7 +25,7 @@ const Live = () => {
             <Timeline
               wrapper={<div className="relative overflow-hidden" />}
             >
-              <div className="flex items-center flex-col-reverse sm:flex-row overflow-hidden gap-[50px] md:gap-[100px] video-height bg-white">
+              <div className="flex items-center flex-col-reverse sm:flex-row overflow-hidden gap-[50px] md:gap-[100px] video-height">
                 <div className="rounded-[36px] w-[320px] overflow-hidden">
                   <video
                     playsInline
@@ -46,10 +46,10 @@ const Live = () => {
                 </p>
               </div>
               <Tween
-                from={{ y: '-100%' }}
+                from={{ y: '100%' }}
                 to={{ y: '0%' }}
               >
-                <div className="flex items-center flex-col-reverse sm:flex-row absolute top-0 overflow-hidden gap-[50px] md:gap-[100px] video-height bg-white">
+                <div className="flex items-center flex-col-reverse sm:flex-row absolute top-0 overflow-hidden gap-[50px] md:gap-[100px] video-height">
                   <div className="rounded-[36px] w-[320px] overflow-hidden">
                     <video
                       playsInline
@@ -75,7 +75,7 @@ const Live = () => {
                 to={{ y: '0%' }}
                 duration={1}
               >
-                <div className="flex items-center flex-col-reverse sm:flex-row absolute top-0 overflow-hidden gap-[50px] md:gap-[100px] video-height bg-white">
+                <div className="flex items-center flex-col-reverse sm:flex-row absolute top-0 overflow-hidden gap-[50px] md:gap-[100px] video-height">
                   <div className="rounded-[36px] w-[320px] overflow-hidden">
                     <video
                       playsInline
