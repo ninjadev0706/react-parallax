@@ -19,7 +19,7 @@ const Video = () => {
             Built for creators by Creators.
           </p>
         </div>
-        <div className="app-wrap mx-[20px] lg:max-w-[364px]  py-[10px]">
+        <div className="app-wrap m-auto mx-[20px] lg:max-w-[364px]  py-[10px]">
         <img src="./items/apple.png" alt=" " className="h-[30px]" />
         <p className="app-content">Get the app</p>
       </div>
