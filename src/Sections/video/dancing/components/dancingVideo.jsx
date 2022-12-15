@@ -9,7 +9,7 @@ const DancingVideo = () => {
   return (
     <div className="lg:block hidden w-6/12">
       <div className="relative">
-      <div className="w-[300px] h-[420px] m-auto overflow-hidden rounded-[60px]">
+      <div className="w-[250px] h-[420px] m-auto overflow-hidden rounded-[20px]">
         <video playsInline autoPlay muted loop ref={vidRef}>
           <img
             src="./items/video/videomask.svg"
