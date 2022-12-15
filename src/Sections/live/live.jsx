@@ -15,7 +15,7 @@ const Live = () => {
   }, []);
   return (
     <>
-      <div className="relative -mb-[650px] pt-60 hidden sm:block">
+      <div className="relative pt-60 hidden sm:block">
         <Controller>
           <Scene
             triggerHook="onLeave"
