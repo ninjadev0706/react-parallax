@@ -112,12 +112,10 @@ const Live = () => {
       <div className="block sm:hidden mb-[200px] sm:mb-0 relative">
         <Controller>
           <Scene triggerHook="onLeave" duration="200%" pin>
-            <Timeline
-              wrapper={<div className="flex justify-center" />}
-            >
+            <Timeline wrapper={<div className="flex justify-center" />}>
               <div className="relative overflow-hidden">
                 <div className="flex items-center flex-col-reverse sm:flex-row overflow-hidden gap-[50px] md:gap-[100px] video-height">
-                  <div className="rounded-[36px] w-[277px] overflow-hidden">
+                  <div className="rounded-[36px] w-[277px] overflow-hidden  z-40">
                     <video
                       playsInline
                       autoPlay
@@ -130,7 +128,7 @@ const Live = () => {
                     </video>
                   </div>
                   <p
-                    className="font-drukBold font-bold leading-[70px] md:text-[40px] lg:text-[55px] text-[35px]"
+                    className="font-drukBold font-bold leading-[70px] md:text-[40px] lg:text-[55px] text-[35px] z-10 bg-white w-full"
                     id="index"
                   >
                     Stream
@@ -138,7 +136,7 @@ const Live = () => {
                 </div>
                 <Tween from={{ y: "100%" }} to={{ y: "0%" }}>
                   <div className="flex items-center flex-col-reverse sm:flex-row absolute top-0 overflow-hidden gap-[50px] md:gap-[100px] video-height">
-                    <div className="rounded-[36px] w-[277px] overflow-hidden">
+                    <div className="rounded-[36px] w-[277px] overflow-hidden  z-50">
                       <video
                         playsInline
                         autoPlay
@@ -153,12 +151,8 @@ const Live = () => {
                         />
                       </video>
                     </div>
-                    {/* <p
-                      className="font-drukBold font-bold leading-[70px] md:text-[40px] lg:text-[55px] text-[35px] w-[400px] h-[70px] bg-white w-[400px]"
-                      id="index"
-                    > */}
                     <p
-                      className="font-drukBold font-bold leading-[70px] md:text-[40px] lg:text-[55px] text-[35px]"
+                      className="font-drukBold font-bold leading-[70px] md:text-[40px] lg:text-[55px] text-[35px] z-20 bg-white w-full"
                       id="index"
                     >
                       Chat
@@ -167,7 +161,7 @@ const Live = () => {
                 </Tween>
                 <Tween from={{ y: "100%" }} to={{ y: "0%" }} duration={1}>
                   <div className="flex items-center flex-col-reverse sm:flex-row absolute top-0 overflow-hidden gap-[50px] md:gap-[100px] video-height">
-                    <div className="rounded-[36px] w-[277px] overflow-hidden">
+                    <div className="rounded-[36px] w-[277px] overflow-hidden  z-60">
                       <video
                         playsInline
                         autoPlay
@@ -183,7 +177,7 @@ const Live = () => {
                       </video>
                     </div>
                     <p
-                      className="font-drukBold font-bold leading-[70px] md:text-[40px] lg:text-[55px] text-[35px]"
+                      className="font-drukBold font-bold leading-[70px] md:text-[40px] lg:text-[55px] text-[35px] z-30 bg-white w-full"
                       id="index"
                     >
                       Listen
