@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useCallback, useState } from "react";
 import { Parallax } from "react-scroll-parallax";
 import { Controller, Scene } from "react-scrollmagic";
 import { Tween, Timeline } from "react-gsap";
@@ -9,10 +9,62 @@ import "./styles.css";
 
 const Live = () => {
   const vidRef = useRef();
+  const [streamShow, setStreamShow] = useState(false);
+  const [chatShow, setChatShow] = useState(false);
+  const [listenShow, setListenShow] = useState(false);
+  const streamRef = useRef();
+  const chatRef = useRef();
+  const listenRef = useRef();
 
   useEffect(() => {
     vidRef.current.play();
   }, []);
+
+  const handleScroll = useCallback(() => {
+    // const streamTop = streamRef.current.scrollTop;
+    // if (streamTop < 250) {
+    //   setStreamShow(true);
+    // } else {
+    //   setStreamShow(false);
+    // }
+    const streamTop = streamRef.current.getBoundingClientRect().y;
+    const chatTop = chatRef.current.getBoundingClientRect().y;
+    const listenTop = listenRef.current.getBoundingClientRect().y;
+
+    if((chatTop < 76) && (chatTop > 50)) {
+      setChatShow(true)
+    } else {
+      setChatShow(false)
+    }
+    // if (chatTop < 250) {
+    //   setChatShow(true);
+    // } else {
+    //   setChatShow(false);
+    // }
+    // const listenTop = listenRef.current.scrollTop;
+    // if (listenTop < 250) {
+    //   setListenShow(true);
+    // } else {
+    //   setListenShow(false);
+    // }
+
+    console.log("log ==> ", streamTop, chatTop, listenTop)
+
+    console.log(12345);
+  }, []);
+
+  useEffect(() => {
+    // handleScroll();
+    const streamdiv = streamRef.current;
+    document.addEventListener("scroll", handleScroll);
+    
+    console.log(document.querySelector('body'));
+    // const chatdiv = chatRef.current;
+    // chatdiv.addEventListener("scroll", handleScroll);
+    // const listendiv = listenRef.current;
+    // listendiv.addEventListener("scroll", handleScroll);
+  }, [handleScroll]);
+
   return (
     <>
       <div className="relative pt-60 hidden sm:block">
@@ -114,29 +166,37 @@ const Live = () => {
           <Scene triggerHook="onLeave" duration="200%" pin>
             <Timeline wrapper={<div className="flex justify-center" />}>
               <div className="relative overflow-hidden">
-                <div className="flex items-center flex-col-reverse sm:flex-row overflow-hidden gap-[50px] md:gap-[100px] video-height">
-                  <div className="rounded-[36px] w-[277px] overflow-hidden  z-40">
-                    <video
-                      playsInline
-                      autoPlay
-                      muted
-                      loop
-                      ref={vidRef}
-                      className=" h-full"
+                <Tween from={{ y: "0%" }} to={{ y: "0%" }}>
+                  <div className="flex justify-center flex-col-reverse sm:flex-row overflow-hidden gap-[50px] md:gap-[100px] video-height">
+                    <div className="rounded-[36px] w-[277px] overflow-hidden z-40">
+                      <video
+                        playsInline
+                        autoPlay
+                        muted
+                        loop
+                        ref={vidRef}
+                        className=" h-full"
+                      >
+                        <source
+                          src="./items/live/stream.mp4"
+                          type="video/mp4"
+                        />
+                      </video>
+                    </div>
+                    {/* <p
+                      ref={streamRef}
+                      className={`${
+                        streamShow ? "hidden" : "block"
+                      } font-drukBold font-bold leading-[70px] md:text-[40px] lg:text-[55px] text-[35px]  bg-white z-10 px-[30px]`}
+                      id="index"
                     >
-                      <source src="./items/live/stream.mp4" type="video/mp4" />
-                    </video>
+                      Stream
+                    </p> */}
                   </div>
-                  <p
-                    className="font-drukBold font-bold leading-[70px] md:text-[40px] lg:text-[55px] text-[35px] z-10 bg-white w-full"
-                    id="index"
-                  >
-                    Stream
-                  </p>
-                </div>
+                </Tween>
                 <Tween from={{ y: "100%" }} to={{ y: "0%" }}>
-                  <div className="flex items-center flex-col-reverse sm:flex-row absolute top-0 overflow-hidden gap-[50px] md:gap-[100px] video-height">
-                    <div className="rounded-[36px] w-[277px] overflow-hidden  z-50">
+                  <div className="flex justify-center flex-col-reverse sm:flex-row absolute top-0 overflow-hidden gap-[50px] md:gap-[100px] video-height">
+                    <div className="rounded-[36px] w-[277px] overflow-hidden z-50">
                       <video
                         playsInline
                         autoPlay
@@ -151,17 +211,20 @@ const Live = () => {
                         />
                       </video>
                     </div>
-                    <p
-                      className="font-drukBold font-bold leading-[70px] md:text-[40px] lg:text-[55px] text-[35px] z-20 bg-white w-full"
+                    {/* <p
+                      ref={chatRef}
+                      className={`${
+                        !chatShow ? "block" : "hidden"
+                      } font-drukBold font-bold leading-[70px] md:text-[40px] lg:text-[55px] text-[35px]  bg-white z-20  px-[50px]`}
                       id="index"
                     >
                       Chat
-                    </p>
+                    </p> */}
                   </div>
                 </Tween>
                 <Tween from={{ y: "100%" }} to={{ y: "0%" }} duration={1}>
-                  <div className="flex items-center flex-col-reverse sm:flex-row absolute top-0 overflow-hidden gap-[50px] md:gap-[100px] video-height">
-                    <div className="rounded-[36px] w-[277px] overflow-hidden  z-60">
+                  <div className="flex justify-center flex-col-reverse sm:flex-row absolute top-0 overflow-hidden gap-[50px] md:gap-[100px] video-height">
+                    <div className="rounded-[36px] w-[277px] overflow-hidden z-60">
                       <video
                         playsInline
                         autoPlay
@@ -176,12 +239,15 @@ const Live = () => {
                         />
                       </video>
                     </div>
-                    <p
-                      className="font-drukBold font-bold leading-[70px] md:text-[40px] lg:text-[55px] text-[35px] z-30 bg-white w-full"
+                    {/* <p
+                      ref={listenRef}
+                      className={`${
+                        listenShow ? "hidden" : "block"
+                      } font-drukBold font-bold leading-[70px] md:text-[40px] lg:text-[55px] text-[35px]  bg-white z-30 px-[30px]`}
                       id="index"
                     >
                       Listen
-                    </p>
+                    </p> */}
                   </div>
                 </Tween>
               </div>
