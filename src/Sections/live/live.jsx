@@ -110,36 +110,90 @@ const Live = () => {
         </div>
       </div>
       <div className="block sm:hidden mb-[200px] sm:mb-0 relative">
-        <div className="flex flex-col overflow-hidden gap-[50px] md:gap-[100px] items-center justify-center">
-          <p
-            className="font-drukBold font-bold leading-[2] md:text-[40px] lg:text-[55px] text-[35px] w-[400px] text-center"
-            id="index"
-          >
-            Stream
-          </p>
-          <div className="rounded-[24px] overflow-hidden">
-            <video
-              playsInline
-              autoPlay
-              muted
-              loop
-              ref={vidRef}
-              className="w-[240px] h-full"
+        <Controller>
+          <Scene triggerHook="onLeave" duration="200%" pin>
+            <Timeline
+              wrapper={<div className="flex justify-center" />}
             >
-              <source src="./items/live/stream.mp4" type="video/mp4" />
-            </video>
-            <img
-              src="./items/train/globe.png"
-              alt=" "
-              className="absolute left-[10%] top-[140px]"
-            />
-            <img
-              src="./items/train/stick.png"
-              alt=" "
-              className="absolute right-[50px] -bottom-[50px] w-[100px]"
-            />
-          </div>
-        </div>
+              <div className="relative overflow-hidden">
+                <div className="flex items-center flex-col-reverse sm:flex-row overflow-hidden gap-[50px] md:gap-[100px] video-height">
+                  <div className="rounded-[36px] w-[277px] overflow-hidden">
+                    <video
+                      playsInline
+                      autoPlay
+                      muted
+                      loop
+                      ref={vidRef}
+                      className=" h-full"
+                    >
+                      <source src="./items/live/stream.mp4" type="video/mp4" />
+                    </video>
+                  </div>
+                  <p
+                    className="font-drukBold font-bold leading-[70px] md:text-[40px] lg:text-[55px] text-[35px]"
+                    id="index"
+                  >
+                    Stream
+                  </p>
+                </div>
+                <Tween from={{ y: "100%" }} to={{ y: "0%" }}>
+                  <div className="flex items-center flex-col-reverse sm:flex-row absolute top-0 overflow-hidden gap-[50px] md:gap-[100px] video-height">
+                    <div className="rounded-[36px] w-[277px] overflow-hidden">
+                      <video
+                        playsInline
+                        autoPlay
+                        muted
+                        loop
+                        ref={vidRef}
+                        className=" h-full"
+                      >
+                        <source
+                          src="./items/live/listen.mp4"
+                          type="video/mp4"
+                        />
+                      </video>
+                    </div>
+                    {/* <p
+                      className="font-drukBold font-bold leading-[70px] md:text-[40px] lg:text-[55px] text-[35px] w-[400px] h-[70px] bg-white w-[400px]"
+                      id="index"
+                    > */}
+                    <p
+                      className="font-drukBold font-bold leading-[70px] md:text-[40px] lg:text-[55px] text-[35px]"
+                      id="index"
+                    >
+                      Chat
+                    </p>
+                  </div>
+                </Tween>
+                <Tween from={{ y: "100%" }} to={{ y: "0%" }} duration={1}>
+                  <div className="flex items-center flex-col-reverse sm:flex-row absolute top-0 overflow-hidden gap-[50px] md:gap-[100px] video-height">
+                    <div className="rounded-[36px] w-[277px] overflow-hidden">
+                      <video
+                        playsInline
+                        autoPlay
+                        muted
+                        loop
+                        ref={vidRef}
+                        className=" h-full"
+                      >
+                        <source
+                          src="./items/live/communicate.mp4"
+                          type="video/mp4"
+                        />
+                      </video>
+                    </div>
+                    <p
+                      className="font-drukBold font-bold leading-[70px] md:text-[40px] lg:text-[55px] text-[35px]"
+                      id="index"
+                    >
+                      Listen
+                    </p>
+                  </div>
+                </Tween>
+              </div>
+            </Timeline>
+          </Scene>
+        </Controller>
       </div>
     </>
   );
