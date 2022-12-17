@@ -61,15 +61,14 @@
 @media screen and (max-width: 640px) {
   .scrollmagic-pin-spacer .scrollmagic-pin-spacer > div:nth-child(1),
   .scrollmagic-pin-spacer > div:nth-child(1) {
-    top: 125px !important;
+    top: 0 !important;
     margin-left: 0% !important;
   }
   .video-height {
     height: calc(100vh - 50px);
     overflow: hidden;
   }
-
   .scrollmagic-pin-spacer {
-    inset: 0px auto auto;
+    inset: 0px auto auto !important;
   }
 }
