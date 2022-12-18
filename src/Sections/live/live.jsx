@@ -9,61 +9,61 @@ import "./styles.css";
 
 const Live = () => {
   const vidRef = useRef();
-  const [streamShow, setStreamShow] = useState(false);
-  const [chatShow, setChatShow] = useState(false);
-  const [listenShow, setListenShow] = useState(false);
-  const streamRef = useRef();
-  const chatRef = useRef();
-  const listenRef = useRef();
+  // const [streamShow, setStreamShow] = useState(false);
+  // const [chatShow, setChatShow] = useState(false);
+  // const [listenShow, setListenShow] = useState(false);
+  // const streamRef = useRef();
+  // const chatRef = useRef();
+  // const listenRef = useRef();
 
   useEffect(() => {
     vidRef.current.play();
   }, []);
 
-  const handleScroll = useCallback(() => {
-    // const streamTop = streamRef.current.scrollTop;
-    // if (streamTop < 250) {
-    //   setStreamShow(true);
-    // } else {
-    //   setStreamShow(false);
-    // }
-    const streamTop = streamRef.current.getBoundingClientRect().y;
-    const chatTop = chatRef.current.getBoundingClientRect().y;
-    const listenTop = listenRef.current.getBoundingClientRect().y;
+  // const handleScroll = useCallback(() => {
+  //   // const streamTop = streamRef.current.scrollTop;
+  //   // if (streamTop < 250) {
+  //   //   setStreamShow(true);
+  //   // } else {
+  //   //   setStreamShow(false);
+  //   // }
+  //   const streamTop = streamRef.current.getBoundingClientRect().y;
+  //   const chatTop = chatRef.current.getBoundingClientRect().y;
+  //   const listenTop = listenRef.current.getBoundingClientRect().y;
 
-    if((chatTop < 76) && (chatTop > 50)) {
-      setChatShow(true)
-    } else {
-      setChatShow(false)
-    }
-    // if (chatTop < 250) {
-    //   setChatShow(true);
-    // } else {
-    //   setChatShow(false);
-    // }
-    // const listenTop = listenRef.current.scrollTop;
-    // if (listenTop < 250) {
-    //   setListenShow(true);
-    // } else {
-    //   setListenShow(false);
-    // }
+  //   if((chatTop < 76) && (chatTop > 50)) {
+  //     setChatShow(true)
+  //   } else {
+  //     setChatShow(false)
+  //   }
+  //   // if (chatTop < 250) {
+  //   //   setChatShow(true);
+  //   // } else {
+  //   //   setChatShow(false);
+  //   // }
+  //   // const listenTop = listenRef.current.scrollTop;
+  //   // if (listenTop < 250) {
+  //   //   setListenShow(true);
+  //   // } else {
+  //   //   setListenShow(false);
+  //   // }
 
-    console.log("log ==> ", streamTop, chatTop, listenTop)
+  //   console.log("log ==> ", streamTop, chatTop, listenTop)
 
-    console.log(12345);
-  }, []);
+  //   console.log(12345);
+  // }, []);
 
-  useEffect(() => {
-    // handleScroll();
-    const streamdiv = streamRef.current;
-    document.addEventListener("scroll", handleScroll);
-    
-    console.log(document.querySelector('body'));
-    // const chatdiv = chatRef.current;
-    // chatdiv.addEventListener("scroll", handleScroll);
-    // const listendiv = listenRef.current;
-    // listendiv.addEventListener("scroll", handleScroll);
-  }, [handleScroll]);
+  // useEffect(() => {
+  //   // handleScroll();
+  //   const streamdiv = streamRef.current;
+  //   document.addEventListener("scroll", handleScroll);
+
+  //   console.log(document.querySelector('body'));
+  //   // const chatdiv = chatRef.current;
+  //   // chatdiv.addEventListener("scroll", handleScroll);
+  //   // const listendiv = listenRef.current;
+  //   // listendiv.addEventListener("scroll", handleScroll);
+  // }, [handleScroll]);
 
   return (
     <>
@@ -167,7 +167,7 @@ const Live = () => {
             <Timeline wrapper={<div className="flex justify-center" />}>
               <div className="relative overflow-hidden">
                 <Tween from={{ y: "0%" }} to={{ y: "0%" }}>
-                  <div className="flex justify-center flex-col-reverse sm:flex-row overflow-hidden gap-[50px] md:gap-[100px] video-height">
+                  <div className="flex justify-center flex-col sm:flex-row overflow-hidden gap-[50px] md:gap-[100px] video-height">
                     <div className="rounded-[36px] w-[277px] overflow-hidden z-40">
                       <video
                         playsInline
@@ -183,19 +183,16 @@ const Live = () => {
                         />
                       </video>
                     </div>
-                    {/* <p
-                      ref={streamRef}
-                      className={`${
-                        streamShow ? "hidden" : "block"
-                      } font-drukBold font-bold leading-[70px] md:text-[40px] lg:text-[55px] text-[35px]  bg-white z-10 px-[30px]`}
+                    <p
+                      className="font-drukBold font-bold leading-[70px] md:text-[40px] lg:text-[55px] text-[35px]  bg-white z-10 px-[30px] text-center"
                       id="index"
                     >
                       Stream
-                    </p> */}
+                    </p>
                   </div>
                 </Tween>
                 <Tween from={{ y: "100%" }} to={{ y: "0%" }}>
-                  <div className="flex justify-center flex-col-reverse sm:flex-row absolute top-0 overflow-hidden gap-[50px] md:gap-[100px] video-height">
+                  <div className="flex justify-center flex-col sm:flex-row absolute top-0 overflow-hidden gap-[50px] md:gap-[100px] video-height">
                     <div className="rounded-[36px] w-[277px] overflow-hidden z-50">
                       <video
                         playsInline
@@ -211,19 +208,16 @@ const Live = () => {
                         />
                       </video>
                     </div>
-                    {/* <p
-                      ref={chatRef}
-                      className={`${
-                        !chatShow ? "block" : "hidden"
-                      } font-drukBold font-bold leading-[70px] md:text-[40px] lg:text-[55px] text-[35px]  bg-white z-20  px-[50px]`}
+                    <p
+                      className="font-drukBold font-bold leading-[70px] md:text-[40px] lg:text-[55px] text-[35px]  bg-white z-20  px-[50px] text-center"
                       id="index"
                     >
                       Chat
-                    </p> */}
+                    </p>
                   </div>
                 </Tween>
                 <Tween from={{ y: "100%" }} to={{ y: "0%" }} duration={1}>
-                  <div className="flex justify-center flex-col-reverse sm:flex-row absolute top-0 overflow-hidden gap-[50px] md:gap-[100px] video-height">
+                  <div className="flex justify-center flex-col sm:flex-row absolute top-0 overflow-hidden gap-[50px] md:gap-[100px] video-height">
                     <div className="rounded-[36px] w-[277px] overflow-hidden z-60">
                       <video
                         playsInline
@@ -231,7 +225,7 @@ const Live = () => {
                         muted
                         loop
                         ref={vidRef}
-                        className=" h-full"
+                        className="h-full"
                       >
                         <source
                           src="./items/live/communicate.mp4"
@@ -239,15 +233,12 @@ const Live = () => {
                         />
                       </video>
                     </div>
-                    {/* <p
-                      ref={listenRef}
-                      className={`${
-                        listenShow ? "hidden" : "block"
-                      } font-drukBold font-bold leading-[70px] md:text-[40px] lg:text-[55px] text-[35px]  bg-white z-30 px-[30px]`}
+                    <p
+                      className="font-drukBold font-bold leading-[70px] md:text-[40px] lg:text-[55px] text-[35px]  bg-white z-30 px-[30px] text-center"
                       id="index"
                     >
                       Listen
-                    </p> */}
+                    </p>
                   </div>
                 </Tween>
               </div>
