@@ -20,9 +20,9 @@ const Lock = () => {
               <input
                 type="text"
                 className="lock_input w-[100%] text-[16px] items-center outline-none"
-                placeholder="/username"
+                placeholder="username"
               />
-              <span className="absolute left-[20px] text-[16px]">billa.net</span>
+              <span className="absolute left-[20px] text-[16px]">billa.net/</span>
               <img
                 src="./items/lock/Path.svg"
                 alt=" "

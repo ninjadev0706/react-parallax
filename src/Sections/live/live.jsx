@@ -161,7 +161,7 @@ const Live = () => {
           </div>
         </div>
       </div>
-      <div className="block sm:hidden mb-[200px] sm:mb-0 relative">
+      <div className="block sm:hidden my-[100px] sm:mb-0 relative">
         <Controller>
           <Scene triggerHook="onLeave" duration="200%" pin>
             <Timeline wrapper={<div className="flex justify-center" />}>
