@@ -50,23 +50,29 @@
   white-space: nowrap;
   top: 0;
   left: 0;
-  animation: move 4s;
+  animation: move 10s;
   animation-iteration-count: infinite;
-  animation-delay: 1s;
+  animation-delay: 3s;
+}
+
+.colorful {
+  background: -webkit-linear-gradient(40deg, #0070f3 0%, #f81ce5 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 @keyframes move {
-  0% {
+  0%,
+  25% {
     top: 0px;
   }
-  25% {
+  30%,
+  55% {
     top: -32px;
   }
-  50% {
+  60%,
+  85% {
     top: -65px;
-  }
-  75% {
-    top: -32px;
   }
 }
 
@@ -149,23 +155,23 @@
     white-space: nowrap;
     top: 0;
     left: 0;
-    animation: move 4s;
+    animation: move1 10s;
     animation-iteration-count: infinite;
-    animation-delay: 1s;
+    animation-delay: 3s;
   }
-  
-  @keyframes move {
-    0% {
+
+  @keyframes move5 {
+    0%,
+    25% {
       top: 0px;
     }
-    25% {
+    30%,
+    55% {
       top: -35px;
     }
-    50% {
+    60%,
+    85% {
       top: -76px;
-    }
-    75% {
-      top: -35px;
     }
   }
 }
@@ -197,23 +203,23 @@
     white-space: nowrap;
     top: 0;
     left: 0;
-    animation: move 4s;
+    animation: move1 10s;
     animation-iteration-count: infinite;
-    animation-delay: 1s;
+    animation-delay: 3s;
   }
-  
-  @keyframes move {
-    0% {
+
+  @keyframes move3 {
+    0%,
+    25% {
       top: 0px;
     }
-    25% {
+    30%,
+    55% {
       top: -50px;
     }
-    50% {
+    60%,
+    85% {
       top: -100px;
-    }
-    75% {
-      top: -50px;
     }
   }
 }
@@ -239,23 +245,23 @@
     white-space: nowrap;
     top: 0;
     left: 0;
-    animation: move 4s;
+    animation: move1 10s;
     animation-iteration-count: infinite;
-    animation-delay: 1s;
+    animation-delay: 3s;
   }
-  
-  @keyframes move {
-    0% {
+
+  @keyframes move2 {
+    0%,
+    25% {
       top: 0px;
     }
-    25% {
+    30%,
+    55% {
       top: -50px;
     }
-    50% {
+    60%,
+    85% {
       top: -100px;
-    }
-    75% {
-      top: -50px;
     }
   }
 }
@@ -281,23 +287,23 @@
     white-space: nowrap;
     top: 0;
     left: 0;
-    animation: move1 4s;
+    animation: move1 10s;
     animation-iteration-count: infinite;
-    animation-delay: 1s;
+    animation-delay: 3s;
   }
 
   @keyframes move1 {
-    0% {
+    0%,
+    25% {
       top: 0px;
     }
-    25% {
+    30%,
+    55% {
       top: -70px;
     }
-    50% {
+    60%,
+    85% {
       top: -140px;
-    }
-    75% {
-      top: -70px;
     }
   }
 
