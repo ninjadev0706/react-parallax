@@ -24,6 +24,52 @@
   box-shadow: inset 0px, 50px, 0px, 50px white;
 }
 
+/* .content {
+  height: 120px;
+} */
+.video-size {
+  max-width: 680px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 80px;
+}
+.static {
+  height: 40px;
+  float: left;
+  margin-right: 0.3em;
+}
+.dynamic {
+  float: left;
+  overflow: hidden;
+  position: relative;
+  height: 30px;
+}
+.content-text {
+  display: inline-block;
+  position: relative;
+  white-space: nowrap;
+  top: 0;
+  left: 0;
+  animation: move 4s;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+}
+
+@keyframes move {
+  0% {
+    top: 0px;
+  }
+  25% {
+    top: -32px;
+  }
+  50% {
+    top: -65px;
+  }
+  75% {
+    top: -32px;
+  }
+}
+
 @media only screen and (max-width: 1023px) {
   .app-wrap {
   }
@@ -37,7 +83,7 @@
   .hero-video {
     flex-direction: column-reverse;
     width: 100%;
-  }  
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -46,7 +92,7 @@
   }
 }
 
-.floating {  
+.floating {
   animation-name: floating;
   animation-duration: 3s;
   animation-iteration-count: infinite;
@@ -56,9 +102,15 @@
 }
 
 @keyframes floating {
-  from { transform: translate(0,  0px); }
-  65%  { transform: translate(0, 15px); }
-  to   { transform: translate(0, -0px); }    
+  from {
+    transform: translate(0, 0px);
+  }
+  65% {
+    transform: translate(0, 15px);
+  }
+  to {
+    transform: translate(0, -0px);
+  }
 }
 
 @media only screen and (min-width: 1768px) {
@@ -71,24 +123,184 @@
 }
 
 @media only screen and (min-width: 1200px) {
+  /* .content {
+    height: 130px;
+  } */
   .video-size {
     max-width: 680px;
     width: 100%;
     overflow: hidden;
     border-radius: 80px;
   }
+  .static {
+    height: 50px;
+    float: left;
+    margin-right: 0.3em;
+  }
+  .dynamic {
+    float: left;
+    overflow: hidden;
+    position: relative;
+    height: 40px;
+  }
+  .content-text {
+    display: inline-block;
+    position: relative;
+    white-space: nowrap;
+    top: 0;
+    left: 0;
+    animation: move 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+  }
+  
+  @keyframes move {
+    0% {
+      top: 0px;
+    }
+    25% {
+      top: -35px;
+    }
+    50% {
+      top: -76px;
+    }
+    75% {
+      top: -35px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1279px) {
+  /* .content {
+    height: 150px;
+  } */
+  .dynamic {
+    float: left;
+    overflow: hidden;
+    position: relative;
+    height: 50px;
+  }
+  .video-size {
+    max-width: 680px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 80px;
+  }
+  .static {
+    height: 50px;
+    float: left;
+    margin-right: 0.3em;
+  }
+  .content-text {
+    display: inline-block;
+    position: relative;
+    white-space: nowrap;
+    top: 0;
+    left: 0;
+    animation: move 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+  }
+  
+  @keyframes move {
+    0% {
+      top: 0px;
+    }
+    25% {
+      top: -50px;
+    }
+    50% {
+      top: -100px;
+    }
+    75% {
+      top: -50px;
+    }
+  }
 }
 
 @media only screen and (min-width: 1340px) {
+  /* .content {
+    height: 150px;
+  } */
   .video-size {
     max-width: 775px;
     width: 100%;
     overflow: hidden;
     border-radius: 80px;
   }
+  .static {
+    height: 50px;
+    float: left;
+    margin-right: 0.3em;
+  }
+  .content-text {
+    display: inline-block;
+    position: relative;
+    white-space: nowrap;
+    top: 0;
+    left: 0;
+    animation: move 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+  }
+  
+  @keyframes move {
+    0% {
+      top: 0px;
+    }
+    25% {
+      top: -50px;
+    }
+    50% {
+      top: -100px;
+    }
+    75% {
+      top: -50px;
+    }
+  }
 }
 
 @media only screen and (min-width: 1535px) {
+  /* .content {
+    height: 200px;
+  } */
+  .static {
+    height: 70px;
+    float: left;
+    margin-right: 0.3em;
+  }
+  .dynamic {
+    float: left;
+    overflow: hidden;
+    position: relative;
+    height: 70px;
+  }
+  .content-text {
+    display: inline-block;
+    position: relative;
+    white-space: nowrap;
+    top: 0;
+    left: 0;
+    animation: move1 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+  }
+
+  @keyframes move1 {
+    0% {
+      top: 0px;
+    }
+    25% {
+      top: -70px;
+    }
+    50% {
+      top: -140px;
+    }
+    75% {
+      top: -70px;
+    }
+  }
+
   .video-size {
     max-width: 750px;
     width: 100%;
