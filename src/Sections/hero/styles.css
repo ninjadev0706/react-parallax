@@ -53,6 +53,7 @@
   animation: move 10s;
   animation-iteration-count: infinite;
   animation-delay: 3s;
+  line-height: 1.2;
 }
 
 .colorful {
@@ -63,17 +64,18 @@
 
 @keyframes move {
   0%,
-  25% {
-    top: 0px;
-  }
-  30%,
-  55% {
-    top: -32px;
-  }
-  60%,
-  85% {
-    top: -65px;
-  }
+    23%,
+    100% {
+      top: -3px;
+    }
+    30%,
+    60% {
+      top: -40px;
+    }
+    65%,
+    100% {
+      top: -80px;
+    }
 }
 
 @media only screen and (max-width: 1023px) {
@@ -155,23 +157,24 @@
     white-space: nowrap;
     top: 0;
     left: 0;
-    animation: move1 10s;
+    animation: move5 10s;
     animation-iteration-count: infinite;
     animation-delay: 3s;
   }
 
   @keyframes move5 {
     0%,
-    25% {
-      top: 0px;
+    23%,
+    100% {
+      top: -5px;
     }
     30%,
-    55% {
-      top: -35px;
+    60% {
+      top: -50px;
     }
-    60%,
-    85% {
-      top: -76px;
+    65%,
+    100% {
+      top: -95px;
     }
   }
 }
@@ -203,23 +206,24 @@
     white-space: nowrap;
     top: 0;
     left: 0;
-    animation: move1 10s;
+    animation: move3 10s;
     animation-iteration-count: infinite;
     animation-delay: 3s;
   }
 
   @keyframes move3 {
     0%,
-    25% {
-      top: 0px;
+    23%,
+    100% {
+      top: -5px;
     }
     30%,
-    55% {
-      top: -50px;
+    60% {
+      top: -65px;
     }
-    60%,
-    85% {
-      top: -100px;
+    65%,
+    100% {
+      top: -125px;
     }
   }
 }
@@ -245,23 +249,24 @@
     white-space: nowrap;
     top: 0;
     left: 0;
-    animation: move1 10s;
+    animation: move2 10s;
     animation-iteration-count: infinite;
     animation-delay: 3s;
   }
 
   @keyframes move2 {
     0%,
-    25% {
-      top: 0px;
+    23%,
+    100% {
+      top: -5px;
     }
     30%,
-    55% {
-      top: -50px;
+    60% {
+      top: -65px;
     }
-    60%,
-    85% {
-      top: -100px;
+    65%,
+    100% {
+      top: -125px;
     }
   }
 }
@@ -294,16 +299,17 @@
 
   @keyframes move1 {
     0%,
-    25% {
-      top: 0px;
+    23%,
+    100% {
+      top: -8px;
     }
     30%,
-    55% {
-      top: -70px;
+    60% {
+      top: -90px;
     }
-    60%,
-    85% {
-      top: -140px;
+    65%,
+    100% {
+      top: -175px;
     }
   }
 
