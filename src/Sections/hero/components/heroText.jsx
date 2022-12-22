@@ -24,7 +24,7 @@ const HeroText = () => {
       </div>
       <div>
         <p className="mb-[15px] pl-[20px] md:pl-[0] 2xl:mb-[20px] hidden md:block text-[15px] 2xl:text-[15px] font-bold">
-          The web3 way of taking control of your content monetization.
+          The web3 way of monetizing your content.
         </p>
       </div>
       <div className="app-wrap mx-[20px] md:mx-[0px] lg:max-w-[364px]  py-[10px]">
