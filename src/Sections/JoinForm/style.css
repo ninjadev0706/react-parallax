@@ -24,7 +24,7 @@
   font-size: 0.8rem;
 }
 .black::placeholder {
-  color: rgba(0, 0, 0, 0.623);
+  color: rgba(0, 0, 0);
   /* italics */
   /* font-style: italic; */
   font-size: 0.8rem;
@@ -50,7 +50,7 @@
   color: black;
 }
 .black span {
-  color: rgba(0, 0, 0, 0.486);
+  color: rgba(0, 0, 0);
 }
 
 .with_appen input {
