@@ -1,5 +1,6 @@
 import React from "react";
 import { Parallax } from "react-scroll-parallax";
+import JoinForm from "../JoinForm/JoinForm";
 import LockImage from "./components/lockImage";
 import Mobile from "./components/mobile";
 import "./styles.css";
@@ -17,17 +18,14 @@ const Lock = () => {
               Select a username
             </p>
             <div className="flex justify-center relative items-center gap-[30px]">
-              <input
+              {/* <input
                 type="text"
                 className="lock_input w-[100%] text-[16px] items-center outline-none"
                 placeholder="username"
               />
-              <span className="absolute left-[20px] text-[16px]">billa.net/</span>
-              <img
-                src="./items/lock/Path.svg"
-                alt=" "
-                className="w-[48px] md:w-[50px] lg:w-[60px] xl:w-[70px]"
-              />
+              <span className="absolute left-[20px] text-[16px]">billa.net/</span> */}
+              <JoinForm />
+             
             </div>
           </div>
         </div>
@@ -40,7 +38,11 @@ const Lock = () => {
       </div>
       <div className="md:hidden block ml-[20px] md:mt-[100px] mt-[60px] md:mb-[50px] mb-[15px]">
         <Parallax translateY={[20, -30]}>
-          <img src="./items/tech/small_pipe.png" alt=" " className="w-[80px] z-10" />
+          <img
+            src="./items/tech/small_pipe.png"
+            alt=" "
+            className="w-[80px] z-10"
+          />
         </Parallax>
       </div>
       <Mobile />
