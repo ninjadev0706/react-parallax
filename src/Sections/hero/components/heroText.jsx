@@ -18,11 +18,11 @@ const HeroText = () => {
             </b>
           </div>
           <div className="static w-full">crypto,</div>
-          <div className="static colorful w-full mb-[10px]">earn it.</div>
+          <div className="static colorful w-full mb-[30px]">earn it.</div>
         </div>
       </div>
       <div>
-        <p className="mb-[15px] pl-[20px] md:pl-[0] 2xl:mb-[20px] hidden md:block text-[15px] 2xl:text-[15px] font-bold">
+        <p className="mb-[15px] pl-[20px] md:pl-[0] md:mb-[35px] hidden md:block text-[15px] 2xl:text-[15px] font-bold">
           The web3 way of monetizing your content.
         </p>
       </div>

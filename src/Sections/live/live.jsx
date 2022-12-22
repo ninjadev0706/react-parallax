@@ -67,7 +67,7 @@ const Live = () => {
 
   return (
     <>
-      <div className="relative pt-60 hidden sm:block">
+      <div className="relative pt-80 hidden sm:block">
         <Controller>
           <Scene triggerHook="onLeave" duration="200%" pin>
             <Timeline

@@ -6,7 +6,7 @@ import './styles.css'
 
 const Art = () => {
     return (
-        <div className='lg:flex mb-20 justify-center gap-[50px] w-full'>
+        <div className='lg:flex my-40 justify-center gap-[50px] w-full'>
             <ArtComponent />
             <ArtVideo />
         </div>

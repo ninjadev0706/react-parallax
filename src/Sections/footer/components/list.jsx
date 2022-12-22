@@ -6,11 +6,6 @@ const List = () => {
         <div className="w-4/12 mb-10">
           <p className="social">TWITTER</p>
           <p className="social">DISCORD</p>
-          <img
-            src="./items/app_store.png"
-            alt=" "
-            className="mt-10 w-[140px] md:flex hidden"
-          />
         </div>
         <div className="md:w-8/12 mb-10">
           <p className="social">TERMS & CONDITIONS</p>
