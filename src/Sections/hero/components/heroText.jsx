@@ -1,5 +1,4 @@
 import React from "react";
-import { useParallax, Parallax } from "react-scroll-parallax";
 
 const HeroText = () => {
   return (

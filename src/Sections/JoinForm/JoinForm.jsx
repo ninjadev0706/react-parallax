@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-// import { submitBetaJoinForm } from "../services/beta-join";
+import { submitBetaJoinForm } from "../services/beta-join";
 import { CheckCircle, AlertCircle } from "react-feather";
 import "./style.css";
 import AlertDialog from "../AlertDialog";
@@ -99,22 +99,22 @@ function JoinForm({ color }) {
       return;
     }
     setisLoading(true);
-    // try {
-    //   await submitBetaJoinForm({
-    //     ...betaJoinFormData,
-    //     username: betaJoinFormData.username.toLowerCase(),
-    //   });
-    //   setbetaJoinFormData({
-    //     email: "",
-    //     username: "",
-    //     walletAddress: "",
-    //   });
-    //   setisAlreadySubmitted(true);
-    //   setisLoading(false);
-    // } catch (error) {
-    //   console.log(error);
-    //   setisLoading(false);
-    // }
+    try {
+      await submitBetaJoinForm({
+        ...betaJoinFormData,
+        username: betaJoinFormData.username.toLowerCase(),
+      });
+      setbetaJoinFormData({
+        email: "",
+        username: "",
+        walletAddress: "",
+      });
+      setisAlreadySubmitted(true);
+      setisLoading(false);
+    } catch (error) {
+      console.log(error);
+      setisLoading(false);
+    }
   };
   const validateUsername = () => {
     const lettersAndNumbersRegex = /^[a-zA-Z0-9._-]+$/;
@@ -257,7 +257,7 @@ function JoinForm({ color }) {
         </div>
         <div
           onClick={handleOnSubmit}
-          style={{ color: color === "white" ? "black" : "white" }}
+          style={{ color: color === "white" ? "black" : "white", cursor: "pointer" }}
           className="flex justify-end flex-column my-[18px] mx-[10px] md:m-[13px] lg:m-[13px] xl-[10px]"
         >
           <img
