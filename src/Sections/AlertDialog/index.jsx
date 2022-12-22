@@ -11,7 +11,7 @@ function AlertDialog({ title, description, close = () => {} }) {
             <X />
           </button>
         </div>
-        <div className="alert_body">
+        <div className="alert_body items-center">
           <p>{description}</p>
         </div>
         <div className="alert_footer">

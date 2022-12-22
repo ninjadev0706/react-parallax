@@ -135,6 +135,15 @@ function JoinForm({ color }) {
     return true;
   };
 
+  useEffect(() => {
+    if (isAlreadySubmitted) {
+      setalertDialogDisplay({
+        title: "",
+        description: "Thank you",
+      });
+    }
+  }, [isAlreadySubmitted]);
+
   return (
     <div className="join-form__container w-full">
       {alertDialogDisplay && (
@@ -257,7 +266,10 @@ function JoinForm({ color }) {
         </div>
         <div
           onClick={handleOnSubmit}
-          style={{ color: color === "white" ? "black" : "white", cursor: "pointer" }}
+          style={{
+            color: color === "white" ? "black" : "white",
+            cursor: "pointer",
+          }}
           className="flex justify-end flex-column my-[18px] mx-[10px] md:m-[13px] lg:m-[13px] xl-[10px]"
         >
           <img
