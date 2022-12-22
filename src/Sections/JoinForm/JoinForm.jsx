@@ -139,7 +139,7 @@ function JoinForm({ color }) {
     if (isAlreadySubmitted) {
       setalertDialogDisplay({
         title: "",
-        description: "Thank you",
+        description: "Thank you, will send you an email when we are live.",
       });
     }
   }, [isAlreadySubmitted]);
