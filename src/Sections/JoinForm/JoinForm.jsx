@@ -149,40 +149,6 @@ function JoinForm({ color }) {
       </p> */}
       <form className="form flex">
         <div className="w-full">
-          <div className="form-group" style={{ position: "relative" }}>
-            <input
-              value={betaJoinFormData.walletAddress}
-              name="walletAddress"
-              onChange={handleOnChange}
-              onBlur={checkfieldsAvailability}
-              style={{ color: color, borderColor: color }}
-              type="text"
-              className={`form-control ${color}`}
-              id="address"
-              placeholder="Wallet Address (CEX wallets are not accepted)"
-            />
-            {validateWalletAddress() && (
-              <span style={{ position: "absolute", right: "10px", top: "25%" }}>
-                <CheckCircle size={15} stroke={"green"} />
-              </span>
-            )}{" "}
-            {!validateWalletAddress() &&
-              betaJoinFormData.walletAddress.trim().length > 0 &&
-              !isRemoteCheckRunning && (
-                <span
-                  style={{ position: "absolute", right: "10px", top: "25%" }}
-                >
-                  <AlertCircle size={15} stroke={"red"} />
-                </span>
-              )}
-            {/* {betaJoinFormData.walletAddress &&
-            !remoteValidationResults.uniqueWalletAddress &&
-            !isRemoteCheckRunning && (
-              <span style={{ position: "absolute", right: "10px", top: "25%" }}>
-                <AlertCircle size={15} stroke={"red"} />
-              </span>
-            )} */}
-          </div>
           <div
             className={`form-group  with_appen ${color}`}
             style={{ position: "relative" }}
@@ -221,6 +187,40 @@ function JoinForm({ color }) {
                 <CheckCircle size={15} stroke={"green"} />
               </span>
             )}
+          </div>
+          <div className="form-group" style={{ position: "relative" }}>
+            <input
+              value={betaJoinFormData.walletAddress}
+              name="walletAddress"
+              onChange={handleOnChange}
+              onBlur={checkfieldsAvailability}
+              style={{ color: color, borderColor: color }}
+              type="text"
+              className={`form-control ${color}`}
+              id="address"
+              placeholder="Wallet Address (CEX wallets are not accepted)"
+            />
+            {validateWalletAddress() && (
+              <span style={{ position: "absolute", right: "10px", top: "25%" }}>
+                <CheckCircle size={15} stroke={"green"} />
+              </span>
+            )}{" "}
+            {!validateWalletAddress() &&
+              betaJoinFormData.walletAddress.trim().length > 0 &&
+              !isRemoteCheckRunning && (
+                <span
+                  style={{ position: "absolute", right: "10px", top: "25%" }}
+                >
+                  <AlertCircle size={15} stroke={"red"} />
+                </span>
+              )}
+            {/* {betaJoinFormData.walletAddress &&
+            !remoteValidationResults.uniqueWalletAddress &&
+            !isRemoteCheckRunning && (
+              <span style={{ position: "absolute", right: "10px", top: "25%" }}>
+                <AlertCircle size={15} stroke={"red"} />
+              </span>
+            )} */}
           </div>
           <div className="form-group" style={{ position: "relative" }}>
             <input
