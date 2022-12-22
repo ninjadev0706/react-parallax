@@ -19,7 +19,7 @@ const Hero = () => {
         <HeroText />
         <HeroVideo />
       </div>
-      <div className="md:mt-[100px] mt-[80px] ml-[40%] md:mb-[300px] mb-[80px]">
+      <div className="md:mt-[100px] mt-[80px] ml-[40%] md:mb-[400px] mb-[80px]">
         {/* <Parallax translateY={[80, -30]}> */}
         <img
           className="w-[114px] lg:w-[174px] floating"
