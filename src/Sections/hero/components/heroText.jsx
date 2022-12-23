@@ -1,4 +1,25 @@
 import React from "react";
+import styled from "styled-components";
+
+const AppStore = styled.div`
+  background-color: white;
+  .app-image {
+    background: url("../items/apple.png") no-repeat;
+    background-size: 26px 30px;
+    width: 25px;
+  }
+  :hover {
+    background-color: black;
+    .app-content {
+      color: white;
+    }
+    .app-image {
+      background: url("../items/white-apple.png") no-repeat;
+      background-size: 26px 30px;
+      width: 25px;
+    }
+  }
+`;
 
 const HeroText = () => {
   return (
@@ -26,10 +47,10 @@ const HeroText = () => {
           The web3 way of monetizing your content.
         </p>
       </div>
-      <div className="app-wrap mx-[20px] md:mx-[0px] lg:max-w-[364px]  py-[10px]">
-        <img src="./items/apple.png" alt=" " className="h-[30px]" />
+      <AppStore className="app-wrap mx-[20px] md:mx-[0px] lg:max-w-[364px]  py-[10px]">
+        <div className="app-image h-[30px]"></div>
         <p className="app-content">Get the app</p>
-      </div>
+      </AppStore>
     </div>
   );
 };
