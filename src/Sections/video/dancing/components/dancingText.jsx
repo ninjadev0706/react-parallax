@@ -34,8 +34,9 @@ const DancingText = () => {
         Crypto is here to stay.
       </p>
       <p className="md:block hidden md:text-[17px] text-[14px]">
-        We are doing this to eliminate the middle man, so case in point, we take
-        zero commission, your earning are yours, fully.
+        Unlike big tech, you deserve more than crumbs. We don’t shove ads down
+        users’ throats nor we their data, and most importantly we get paid when
+        you get paid.
       </p>
     </div>
   );

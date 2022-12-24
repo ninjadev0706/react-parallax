@@ -60,9 +60,8 @@ const AppText = () => {
           Goes for running the service
         </p>
         <p className="pl-[5px] my-[20px] md:text-[17px] text-[14px] pr-[15px] font-light leading-[20px]">
-          Unlike big tech, you deserve more than crumbs. We don't shove ads down
-          users' throats, we don't sell their data, and the importantly it is
-          all about you.
+          We have seen SBF, Luna, Save the Child and many more, but we are still
+          early, very early and these are the exception not the rule.
         </p>
       </div>
       <AppStore className="app-wrap mx-[5px] lg:max-w-[364px]  py-[10px]">
