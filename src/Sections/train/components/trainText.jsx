@@ -36,10 +36,10 @@ const TrainText = () => {
           <p className="font-drukBold 2xl:text-[70px] xl:text-[60px] xl:text-[50px] lg:text-[35px] md:text-[25px] 2xl:leading-[60px] xl:leading-[50px] lg:leading-[40px] md:leading-[30px]">
             Hop on the web3 train!
           </p>
-          <p className="z-10 xl:text-[17px] md:text-[13px] mt-3">
+          {/* <p className="z-10 xl:text-[17px] md:text-[13px] mt-3">
             We are doing this to eliminate the middle man, so case in point, we
             take zero commission, your earning are yours, fully.
-          </p>
+          </p> */}
         </div>
       </div>
       <div className="absolute 2xl:ml-[350px] xl:ml-[300px] ml-[250px] ml-[200px] 2xl:t-[20px] xl:t-[20px] t-[20px] t-[20px]">

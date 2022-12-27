@@ -35,7 +35,7 @@ const AppText = () => {
           You in control.
         </p>
         <p className="block md:hidden font-drukBold leading-[1] text-[35px]">
-          Control.
+          You in control.
         </p>
         <div className="flex items-end md:mt-[50px] mt-[20px] relative">
           <p className="text-[130px] md:text-[100px] lg:text-[150px] xl:text-[200px] 2xl:text-[250px] leading-[120px] md:leading-[100px] lg:leading-[150px] xl:leading-[200px] 2xl:leading-[250px] font-drukBold text-[#2c05f7]">
@@ -60,8 +60,9 @@ const AppText = () => {
           Goes for running the service
         </p>
         <p className="pl-[5px] my-[20px] md:text-[17px] text-[14px] pr-[15px] font-light leading-[20px]">
-          We have seen SBF, Luna, Save the Child and many more, but we are still
-          early, very early and these are the exception not the rule.
+          Unlike big tech, you deserve more than crumbs. We don’t shove ads down
+          users’ throats nor we their data, and most importantly we get paid
+          when you get paid.
         </p>
       </div>
       <AppStore className="app-wrap mx-[5px] lg:max-w-[364px]  py-[10px]">

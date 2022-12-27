@@ -162,7 +162,7 @@ function JoinForm({ color }) {
             className={`form-group  with_appen ${color}`}
             style={{ position: "relative" }}
           >
-            <span>blla.net/</span>
+            <span className="text-black font-bold">blla.net/</span>
             <input
               value={betaJoinFormData.username}
               name="username"

@@ -34,9 +34,8 @@ const DancingText = () => {
         Crypto is here to stay.
       </p>
       <p className="md:block hidden md:text-[17px] text-[14px]">
-        Unlike big tech, you deserve more than crumbs. We don’t shove ads down
-        users’ throats nor we their data, and most importantly we get paid when
-        you get paid.
+        We have seen SBF, Luna, Save the Child and many more, but we are still
+        early, very early and these are the exception not the rule.
       </p>
     </div>
   );
