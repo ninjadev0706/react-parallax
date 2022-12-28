@@ -11,11 +11,11 @@ const Mobile = () => {
     <div className="flex justify-center px-[10%] md:hidden md:w-6/12 mb-[200px]">
       <div className="relative items-center">
         <div className="md:video-container w-[250px] md:w-[360px] rounded-[20px] overflow-hidden">
-        <img
+        {/* <img
             src="./items/app/mask.png"
             alt=""
             className="absolute"
-          />
+          /> */}
           <video playsInline autoPlay muted loop ref={vidRef} className="md:p-[15px] p-[10px]">
             <source src="./items/app/app.mp4" type="video/mp4" />
           </video>

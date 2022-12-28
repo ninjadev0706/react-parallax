@@ -8,7 +8,7 @@ const RockVideo = () => {
   }, []);
   return (
     <div className="w-6/12 max-w-[300px]">
-      <div className="w-[250px] h-[420px] m-auto md:m-[0px] overflow-hidden rounded-[20px]">
+      <div className="w-[250px] m-auto md:m-[0px] overflow-hidden rounded-[20px]">
         <video playsInline autoPlay muted loop ref={vidRef}>
           <img
             src="./items/video/videomask.svg"

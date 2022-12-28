@@ -8,7 +8,7 @@ const ArtVideo = () => {
   }, []);
   return (
     <div className="lg:w-6/12 lg:max-w-[320px] lg:p-[30px] w-[100%]">
-      <div className="w-[250px] h-[420px] lg:ml-[0] m-auto overflow-hidden rounded-[20px]">
+      <div className="w-[250px] lg:ml-[0] m-auto overflow-hidden rounded-[20px]">
         <video playsInline autoPlay muted loop ref={vidRef}>
           <source src="./items/video/art/art.mp4" type="video/mp4" />
         </video>

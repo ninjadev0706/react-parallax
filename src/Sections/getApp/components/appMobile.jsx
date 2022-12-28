@@ -11,11 +11,11 @@ const AppMobile = () => {
     <div className="md:block hidden ">
       <div className="relative items-center">
         <div className="video-container overflow-hidden w-[250px] lg:w-[360px]">
-          <img
+          {/* <img
             src="./items/app/mask.png"
             alt=""
             className="absolute"
-          />
+          /> */}
           <video playsInline autoPlay muted loop ref={vidRef} className="lg:p-[15px] p-[12px]">
             <source src="./items/app/app.mp4" type="video/mp4" />
           </video>
